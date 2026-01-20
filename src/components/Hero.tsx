@@ -159,28 +159,35 @@ export default function Hero() {
                         transition={{ duration: 0.6, delay: 0.3 }}
                         className="relative lg:hidden mb-8"
                     >
-                        <div className="relative max-w-xs mx-auto">
+                        <div className="relative max-w-sm mx-auto">
+                            {/* Outer Glow */}
+                            <div className="absolute -inset-4 bg-gradient-to-br from-[#FF6B6B]/30 via-[#FECFEF]/20 to-[#4ECDC4]/30 rounded-[2.5rem] blur-2xl opacity-60" />
+
                             <motion.div
                                 animate={{ y: [0, -10, 0] }}
                                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                                className="relative w-full aspect-square"
+                                className="relative"
                             >
-                                <div className="absolute inset-0 bg-gradient-to-br from-[#FF9A8B] to-[#FECFEF] rounded-[2rem] transform rotate-3" />
-                                <div className="absolute inset-3 bg-white rounded-[1.5rem] shadow-xl overflow-hidden">
-                                    <div className="w-full h-full bg-gradient-to-br from-[#FFFBF0] to-[#FEE5E5] flex items-center justify-center">
-                                        <div className="text-center p-6">
-                                            <div className="w-20 h-20 mx-auto mb-3 bg-[#FF6B6B]/20 rounded-full flex items-center justify-center">
-                                                <Heart size={40} className="text-[#FF6B6B]" />
-                                            </div>
-                                            <p className="text-[#2C3E50] font-medium text-sm">
-                                                Professional Childcare
-                                            </p>
-                                            <p className="text-gray-500 text-xs">
-                                                Creating joyful moments
-                                            </p>
-                                        </div>
+                                {/* Premium Frame */}
+                                <div className="absolute -inset-1 bg-gradient-to-br from-[#FFD700] via-[#FF6B6B] to-[#4ECDC4] rounded-[2rem] opacity-80" />
+                                <div className="absolute inset-0 bg-white rounded-[1.8rem] m-1" />
+
+                                <div className="relative rounded-[1.5rem] overflow-hidden m-2 shadow-2xl">
+                                    <div className="aspect-[4/3] relative">
+                                        <img
+                                            src="/images/hero.png"
+                                            alt="Professional childcare services"
+                                            className="w-full h-full object-cover"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-white/10" />
                                     </div>
                                 </div>
+
+                                {/* Corner Decorations */}
+                                <div className="absolute top-2 left-2 w-6 h-6 border-l-3 border-t-3 border-[#FFD700]/60 rounded-tl-lg" />
+                                <div className="absolute top-2 right-2 w-6 h-6 border-r-3 border-t-3 border-[#FFD700]/60 rounded-tr-lg" />
+                                <div className="absolute bottom-2 left-2 w-6 h-6 border-l-3 border-b-3 border-[#FFD700]/60 rounded-bl-lg" />
+                                <div className="absolute bottom-2 right-2 w-6 h-6 border-r-3 border-b-3 border-[#FFD700]/60 rounded-br-lg" />
                             </motion.div>
                         </div>
                     </motion.div>
@@ -193,29 +200,35 @@ export default function Hero() {
                         className="relative hidden lg:block"
                     >
                         <div className="relative">
+                            {/* Outer Glow */}
+                            <div className="absolute -inset-8 bg-gradient-to-br from-[#FF6B6B]/30 via-[#FECFEF]/20 to-[#4ECDC4]/30 rounded-[3rem] blur-3xl opacity-60" />
+
                             {/* Main Image Container */}
                             <motion.div
                                 animate={{ y: [0, -15, 0] }}
                                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                                className="relative w-full aspect-square max-w-lg mx-auto"
+                                className="relative w-full max-w-lg mx-auto"
                             >
-                                <div className="absolute inset-0 bg-gradient-to-br from-[#FF9A8B] to-[#FECFEF] rounded-[3rem] transform rotate-3" />
-                                <div className="absolute inset-4 bg-white rounded-[2.5rem] shadow-xl overflow-hidden">
-                                    {/* Placeholder for hero image */}
-                                    <div className="w-full h-full bg-gradient-to-br from-[#FFFBF0] to-[#FEE5E5] flex items-center justify-center">
-                                        <div className="text-center p-8">
-                                            <div className="w-32 h-32 mx-auto mb-4 bg-[#FF6B6B]/20 rounded-full flex items-center justify-center">
-                                                <Heart size={64} className="text-[#FF6B6B]" />
-                                            </div>
-                                            <p className="text-[#2C3E50] font-medium">
-                                                Professional Childcare
-                                            </p>
-                                            <p className="text-gray-500 text-sm">
-                                                Creating joyful moments
-                                            </p>
-                                        </div>
+                                {/* Premium Frame */}
+                                <div className="absolute -inset-1.5 bg-gradient-to-br from-[#FFD700] via-[#FF6B6B] to-[#4ECDC4] rounded-[2.5rem] opacity-90" />
+                                <div className="absolute inset-0 bg-white rounded-[2.3rem] m-1.5" />
+
+                                <div className="relative rounded-[2rem] overflow-hidden m-3 shadow-2xl">
+                                    <div className="aspect-[4/3] relative">
+                                        <img
+                                            src="/images/hero.png"
+                                            alt="Professional childcare services"
+                                            className="w-full h-full object-cover"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-white/10" />
                                     </div>
                                 </div>
+
+                                {/* Corner Decorations */}
+                                <div className="absolute top-3 left-3 w-10 h-10 border-l-4 border-t-4 border-[#FFD700]/70 rounded-tl-xl" />
+                                <div className="absolute top-3 right-3 w-10 h-10 border-r-4 border-t-4 border-[#FFD700]/70 rounded-tr-xl" />
+                                <div className="absolute bottom-3 left-3 w-10 h-10 border-l-4 border-b-4 border-[#FFD700]/70 rounded-bl-xl" />
+                                <div className="absolute bottom-3 right-3 w-10 h-10 border-r-4 border-b-4 border-[#FFD700]/70 rounded-br-xl" />
                             </motion.div>
 
                             {/* Floating Badge */}

@@ -38,8 +38,8 @@ export default function Header() {
                 animate={{ y: 0 }}
                 transition={{ duration: 0.5 }}
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                        ? "bg-white/95 backdrop-blur-md shadow-md py-3"
-                        : "bg-transparent py-5"
+                    ? "bg-white/95 backdrop-blur-md shadow-md py-3"
+                    : "bg-transparent py-5"
                     }`}
             >
                 <div className="container-custom flex items-center justify-between">
@@ -67,11 +67,11 @@ export default function Header() {
                     {/* Desktop CTA */}
                     <div className="hidden md:flex items-center gap-4">
                         <a
-                            href="tel:+1234567890"
+                            href="tel:+19132069322"
                             className="flex items-center gap-2 text-[#2C3E50] hover:text-[#FF6B6B] transition-colors"
                         >
                             <Phone size={18} />
-                            <span className="font-medium">(123) 456-7890</span>
+                            <span className="font-medium">(913) 206-9322</span>
                         </a>
                         <motion.button
                             whileHover={{ scale: 1.05 }}
@@ -127,11 +127,11 @@ export default function Header() {
                     </nav>
                     <div className="mt-8 space-y-4">
                         <a
-                            href="tel:+1234567890"
+                            href="tel:+19132069322"
                             className="flex items-center gap-3 text-[#2C3E50] font-medium"
                         >
                             <Phone size={20} />
-                            (123) 456-7890
+                            (913) 206-9322
                         </a>
                         <button
                             onClick={() => scrollToSection("#contact")}

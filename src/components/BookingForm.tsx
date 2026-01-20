@@ -289,7 +289,7 @@ export default function BookingForm() {
                             <h3 className="text-xl font-bold mb-6">Quick Contact</h3>
                             <div className="space-y-4">
                                 <a
-                                    href="tel:+1234567890"
+                                    href="tel:+19132069322"
                                     className="flex items-center gap-4 hover:opacity-80 transition-opacity"
                                 >
                                     <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
@@ -297,7 +297,7 @@ export default function BookingForm() {
                                     </div>
                                     <div>
                                         <p className="text-sm text-white/80">Call or Text</p>
-                                        <p className="font-semibold">(123) 456-7890</p>
+                                        <p className="font-semibold">(913) 206-9322</p>
                                     </div>
                                 </a>
                                 <a
@@ -363,7 +363,7 @@ export default function BookingForm() {
 
                         {/* Text CTA */}
                         <motion.a
-                            href="sms:+1234567890"
+                            href="sms:+19132069322"
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
                             className="flex items-center justify-center gap-3 bg-[#25D366] text-white font-semibold py-4 px-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow"

@@ -239,6 +239,73 @@ p {
   animation: pulse-soft 2s ease-in-out infinite;
 }
 
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes glow-pulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(255, 107, 107, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 40px rgba(255, 107, 107, 0.6), 0 0 60px rgba(78, 205, 196, 0.3);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.animate-glow {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 4s ease infinite;
+}
+
+/* Premium Image Frame Effects */
+.premium-frame {
+  position: relative;
+}
+
+.premium-frame::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(135deg, #FFD700, #FF6B6B, #4ECDC4, #FFD700);
+  border-radius: inherit;
+  z-index: -1;
+  background-size: 300% 300%;
+  animation: gradient-shift 4s ease infinite;
+}
+
 /* ========================================
    FORM STYLES
    ======================================== */

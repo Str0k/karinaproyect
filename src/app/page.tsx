@@ -7,10 +7,14 @@ import Testimonials from "@/components/Testimonials";
 import BookingForm from "@/components/BookingForm";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import FloatingContactBubble from "@/components/FloatingContactBubble";
 
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
+      {/* Floating Contact Bubble */}
+      <FloatingContactBubble />
+
       {/* Sticky Header */}
       <Header />
 

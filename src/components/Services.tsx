@@ -114,13 +114,104 @@ export default function Services() {
                     ))}
                 </div>
 
+                {/* Featured Activities Section */}
+                <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.7, delay: 0.3 }}
+                    className="mt-20 relative"
+                >
+                    <div className="grid lg:grid-cols-2 gap-12 items-center">
+                        {/* Content */}
+                        <div className="text-center lg:text-left order-2 lg:order-1">
+                            <motion.span
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.2 }}
+                                className="inline-block px-4 py-2 bg-[#6C5CE7]/10 text-[#6C5CE7] font-semibold rounded-full text-sm mb-4"
+                            >
+                                Featured Activity
+                            </motion.span>
+                            <motion.h3
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.3 }}
+                                className="text-2xl md:text-3xl font-bold text-[#2C3E50] mb-4"
+                            >
+                                Arts & Crafts{" "}
+                                <span className="text-[#FF6B6B]">Adventures</span>
+                            </motion.h3>
+                            <motion.p
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.4 }}
+                                className="text-gray-600 text-lg leading-relaxed mb-6"
+                            >
+                                Creativity knows no bounds! From painting masterpieces to building crafts,
+                                every session is filled with colorful activities that help children express
+                                themselves while developing fine motor skills and confidence.
+                            </motion.p>
+                            <motion.a
+                                href="#contact"
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.5 }}
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                className="btn-primary inline-flex"
+                            >
+                                Book a Creative Session
+                                <ArrowRight size={18} />
+                            </motion.a>
+                        </div>
+
+                        {/* Image with Premium Frame */}
+                        <div className="relative order-1 lg:order-2">
+                            {/* Outer Glow */}
+                            <div className="absolute -inset-6 bg-gradient-to-br from-[#6C5CE7]/30 via-[#FECFEF]/20 to-[#FF6B6B]/30 rounded-[3rem] blur-2xl opacity-60" />
+
+                            <motion.div
+                                whileHover={{ scale: 1.02, rotate: -1 }}
+                                transition={{ type: "spring", stiffness: 300 }}
+                                className="relative"
+                            >
+                                {/* Premium Frame */}
+                                <div className="absolute -inset-1.5 bg-gradient-to-br from-[#FFD700] via-[#6C5CE7] to-[#FF6B6B] rounded-[2rem] opacity-90" />
+                                <div className="absolute inset-0 bg-white rounded-[1.8rem] m-1.5" />
+
+                                <div className="relative rounded-[1.5rem] overflow-hidden m-3 shadow-2xl">
+                                    <div className="aspect-[4/3] relative">
+                                        <img
+                                            src="/images/activities.png"
+                                            alt="Arts and crafts activities"
+                                            className="w-full h-full object-cover"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-white/10" />
+                                    </div>
+                                </div>
+
+                                {/* Corner Decorations */}
+                                <div className="absolute top-3 left-3 w-8 h-8 border-l-4 border-t-4 border-[#FFD700]/70 rounded-tl-xl" />
+                                <div className="absolute top-3 right-3 w-8 h-8 border-r-4 border-t-4 border-[#FFD700]/70 rounded-tr-xl" />
+                                <div className="absolute bottom-3 left-3 w-8 h-8 border-l-4 border-b-4 border-[#FFD700]/70 rounded-bl-xl" />
+                                <div className="absolute bottom-3 right-3 w-8 h-8 border-r-4 border-b-4 border-[#FFD700]/70 rounded-br-xl" />
+                            </motion.div>
+                        </div>
+                    </div>
+                </motion.div>
+
                 {/* Bottom CTA */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.4 }}
-                    className="text-center mt-12"
+                    className="text-center mt-16"
                 >
                     <p className="text-gray-600 mb-4">
                         Not sure which service is right for you?
