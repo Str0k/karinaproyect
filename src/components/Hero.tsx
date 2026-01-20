@@ -95,6 +95,7 @@ export default function Hero() {
                             transition={{ delay: 0.4 }}
                             className="text-lg md:text-xl text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0"
                         >
+                            Serving <span className="font-semibold text-[#4ECDC4]">Kansas City</span> and surrounding areas.
                             Experienced childcare provider specializing in both in-home and
                             event childcare. Perfect for birthdays, parties, and special
                             events, providing parents peace of mind while creating a fun, safe
