@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Home, Moon, PartyPopper, Languages, ArrowRight } from "lucide-react";
 
 const services = [
@@ -39,9 +40,34 @@ const services = [
 ];
 
 export default function Services() {
+    const sectionRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: sectionRef,
+        offset: ["start end", "end start"],
+    });
+
+    const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+    const decorY1 = useTransform(scrollYProgress, [0, 1], [0, -80]);
+    const decorY2 = useTransform(scrollYProgress, [0, 1], [0, 60]);
+    const decorRotate = useTransform(scrollYProgress, [0, 1], [0, 15]);
+
     return (
-        <section id="services" className="section-padding bg-[#FFFBF0]">
-            <div className="container-custom">
+        <section id="services" ref={sectionRef} className="section-padding bg-[#FFFBF0] relative overflow-hidden">
+            {/* Parallax Decorative Elements */}
+            <motion.div
+                style={{ y: decorY1, rotate: decorRotate }}
+                className="absolute top-20 -left-20 w-40 h-40 bg-gradient-to-br from-[#FF6B6B]/10 to-[#FECFEF]/10 rounded-full blur-3xl pointer-events-none"
+            />
+            <motion.div
+                style={{ y: decorY2 }}
+                className="absolute bottom-40 -right-20 w-60 h-60 bg-gradient-to-br from-[#4ECDC4]/10 to-[#A8E6CF]/10 rounded-full blur-3xl pointer-events-none"
+            />
+            <motion.div
+                style={{ y: backgroundY }}
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-[#FF6B6B]/5 to-transparent rounded-full pointer-events-none"
+            />
+
+            <div className="container-custom relative z-10">
                 {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}

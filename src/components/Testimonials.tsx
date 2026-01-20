@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useRef } from "react";
+import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { Star, Quote, ChevronLeft, ChevronRight, ShieldCheck, FileCheck } from "lucide-react";
 
 const testimonials = [
@@ -37,6 +37,15 @@ const testimonials = [
 
 export default function Testimonials() {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const sectionRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: sectionRef,
+        offset: ["start end", "end start"],
+    });
+
+    const decorY1 = useTransform(scrollYProgress, [0, 1], [0, -70]);
+    const decorY2 = useTransform(scrollYProgress, [0, 1], [0, 100]);
+    const decorScale = useTransform(scrollYProgress, [0, 0.5, 1], [0.9, 1.15, 0.9]);
 
     const nextTestimonial = () => {
         setCurrentIndex((prev) => (prev + 1) % testimonials.length);
@@ -49,8 +58,18 @@ export default function Testimonials() {
     };
 
     return (
-        <section id="testimonials" className="section-padding gradient-section">
-            <div className="container-custom">
+        <section id="testimonials" ref={sectionRef} className="section-padding gradient-section relative overflow-hidden">
+            {/* Parallax Decorative Elements */}
+            <motion.div
+                style={{ y: decorY1, scale: decorScale }}
+                className="absolute top-20 left-10 w-40 h-40 bg-gradient-to-br from-[#FFD700]/15 to-[#FF6B6B]/10 rounded-full blur-3xl pointer-events-none"
+            />
+            <motion.div
+                style={{ y: decorY2 }}
+                className="absolute bottom-20 right-10 w-52 h-52 bg-gradient-to-br from-[#4ECDC4]/15 to-[#A8E6CF]/10 rounded-full blur-3xl pointer-events-none"
+            />
+
+            <div className="container-custom relative z-10">
                 {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}

@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useRef } from "react";
+import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { ChevronDown, HelpCircle } from "lucide-react";
 
 const faqs = [
@@ -49,14 +49,32 @@ const faqs = [
 
 export default function FAQ() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
+    const sectionRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: sectionRef,
+        offset: ["start end", "end start"],
+    });
+
+    const decorY1 = useTransform(scrollYProgress, [0, 1], [0, -50]);
+    const decorY2 = useTransform(scrollYProgress, [0, 1], [0, 70]);
 
     const toggleFAQ = (index: number) => {
         setOpenIndex(openIndex === index ? null : index);
     };
 
     return (
-        <section className="section-padding gradient-section">
-            <div className="container-custom">
+        <section ref={sectionRef} className="section-padding gradient-section relative overflow-hidden">
+            {/* Parallax Decorative Elements */}
+            <motion.div
+                style={{ y: decorY1 }}
+                className="absolute top-24 -left-20 w-48 h-48 bg-gradient-to-br from-[#4ECDC4]/15 to-[#A8E6CF]/10 rounded-full blur-3xl pointer-events-none"
+            />
+            <motion.div
+                style={{ y: decorY2 }}
+                className="absolute bottom-24 -right-20 w-56 h-56 bg-gradient-to-br from-[#FF6B6B]/10 to-[#FECFEF]/15 rounded-full blur-3xl pointer-events-none"
+            />
+
+            <div className="container-custom relative z-10">
                 {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}

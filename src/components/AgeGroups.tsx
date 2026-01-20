@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Baby, Blocks, BookOpen } from "lucide-react";
 
 const ageGroups = [
@@ -52,9 +53,29 @@ const ageGroups = [
 ];
 
 export default function AgeGroups() {
+    const sectionRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: sectionRef,
+        offset: ["start end", "end start"],
+    });
+
+    const decorY1 = useTransform(scrollYProgress, [0, 1], [0, -60]);
+    const decorY2 = useTransform(scrollYProgress, [0, 1], [0, 90]);
+    const decorRotate = useTransform(scrollYProgress, [0, 1], [-10, 10]);
+
     return (
-        <section className="section-padding bg-[#FFFBF0]">
-            <div className="container-custom">
+        <section ref={sectionRef} className="section-padding bg-[#FFFBF0] relative overflow-hidden">
+            {/* Parallax Decorative Elements */}
+            <motion.div
+                style={{ y: decorY1, rotate: decorRotate }}
+                className="absolute top-32 -right-16 w-36 h-36 bg-gradient-to-br from-[#6C5CE7]/15 to-[#EDE9FE]/20 rounded-full blur-2xl pointer-events-none"
+            />
+            <motion.div
+                style={{ y: decorY2 }}
+                className="absolute bottom-32 -left-16 w-44 h-44 bg-gradient-to-br from-[#FF6B6B]/10 to-[#FECFEF]/15 rounded-full blur-3xl pointer-events-none"
+            />
+
+            <div className="container-custom relative z-10">
                 {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}

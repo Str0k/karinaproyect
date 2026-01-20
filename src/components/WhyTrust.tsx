@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import {
     Heart,
     Sparkles,
@@ -38,9 +39,33 @@ const features = [
 ];
 
 export default function WhyTrust() {
+    const sectionRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: sectionRef,
+        offset: ["start end", "end start"],
+    });
+
+    const decorY1 = useTransform(scrollYProgress, [0, 1], [0, -100]);
+    const decorY2 = useTransform(scrollYProgress, [0, 1], [0, 80]);
+    const decorScale = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1.1, 0.8]);
+
     return (
-        <section id="why-trust" className="section-padding gradient-section">
-            <div className="container-custom">
+        <section id="why-trust" ref={sectionRef} className="section-padding gradient-section relative overflow-hidden">
+            {/* Parallax Decorative Elements */}
+            <motion.div
+                style={{ y: decorY1, scale: decorScale }}
+                className="absolute top-10 right-10 w-32 h-32 bg-gradient-to-br from-[#4ECDC4]/20 to-[#A8E6CF]/10 rounded-full blur-2xl pointer-events-none"
+            />
+            <motion.div
+                style={{ y: decorY2 }}
+                className="absolute bottom-20 left-10 w-48 h-48 bg-gradient-to-br from-[#FF9A8B]/15 to-[#FECFEF]/10 rounded-full blur-3xl pointer-events-none"
+            />
+            <motion.div
+                style={{ y: useTransform(scrollYProgress, [0, 1], [50, -50]) }}
+                className="absolute top-1/3 right-1/4 w-24 h-24 bg-[#FFD700]/10 rounded-full blur-xl pointer-events-none"
+            />
+
+            <div className="container-custom relative z-10">
                 {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
