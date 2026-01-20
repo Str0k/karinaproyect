@@ -152,7 +152,40 @@ export default function Hero() {
                         </motion.div>
                     </motion.div>
 
-                    {/* Hero Image/Illustration */}
+                    {/* Hero Image/Illustration - Mobile */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.3 }}
+                        className="relative lg:hidden mb-8"
+                    >
+                        <div className="relative max-w-xs mx-auto">
+                            <motion.div
+                                animate={{ y: [0, -10, 0] }}
+                                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                                className="relative w-full aspect-square"
+                            >
+                                <div className="absolute inset-0 bg-gradient-to-br from-[#FF9A8B] to-[#FECFEF] rounded-[2rem] transform rotate-3" />
+                                <div className="absolute inset-3 bg-white rounded-[1.5rem] shadow-xl overflow-hidden">
+                                    <div className="w-full h-full bg-gradient-to-br from-[#FFFBF0] to-[#FEE5E5] flex items-center justify-center">
+                                        <div className="text-center p-6">
+                                            <div className="w-20 h-20 mx-auto mb-3 bg-[#FF6B6B]/20 rounded-full flex items-center justify-center">
+                                                <Heart size={40} className="text-[#FF6B6B]" />
+                                            </div>
+                                            <p className="text-[#2C3E50] font-medium text-sm">
+                                                Professional Childcare
+                                            </p>
+                                            <p className="text-gray-500 text-xs">
+                                                Creating joyful moments
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        </div>
+                    </motion.div>
+
+                    {/* Hero Image/Illustration - Desktop */}
                     <motion.div
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}

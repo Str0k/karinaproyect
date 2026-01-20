@@ -91,21 +91,22 @@ export default function FAQ() {
                         >
                             <motion.button
                                 onClick={() => toggleFAQ(index)}
-                                className={`w-full flex items-center justify-between p-6 rounded-2xl text-left transition-all ${openIndex === index
-                                        ? "bg-white shadow-lg"
-                                        : "bg-white/50 hover:bg-white hover:shadow-md"
+                                className={`w-full flex items-center justify-between p-4 sm:p-6 rounded-2xl text-left transition-all ${openIndex === index
+                                    ? "bg-white shadow-lg"
+                                    : "bg-white/50 hover:bg-white hover:shadow-md"
                                     }`}
                             >
-                                <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-3 sm:gap-4">
                                     <div
-                                        className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-colors ${openIndex === index
-                                                ? "bg-[#FF6B6B] text-white"
-                                                : "bg-[#FF6B6B]/10 text-[#FF6B6B]"
+                                        className={`w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0 transition-colors ${openIndex === index
+                                            ? "bg-[#FF6B6B] text-white"
+                                            : "bg-[#FF6B6B]/10 text-[#FF6B6B]"
                                             }`}
                                     >
-                                        <HelpCircle size={20} />
+                                        <HelpCircle size={18} className="sm:hidden" />
+                                        <HelpCircle size={20} className="hidden sm:block" />
                                     </div>
-                                    <span className="font-semibold text-[#2C3E50]">
+                                    <span className="font-semibold text-[#2C3E50] text-sm sm:text-base">
                                         {faq.question}
                                     </span>
                                 </div>
@@ -132,9 +133,9 @@ export default function FAQ() {
                                         transition={{ duration: 0.3 }}
                                         className="overflow-hidden"
                                     >
-                                        <div className="px-6 pb-6 pt-2 bg-white rounded-b-2xl -mt-4 shadow-lg">
-                                            <div className="pl-14">
-                                                <p className="text-gray-600 leading-relaxed">
+                                        <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-2 bg-white rounded-b-2xl -mt-4 shadow-lg">
+                                            <div className="pl-0 sm:pl-14">
+                                                <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                                                     {faq.answer}
                                                 </p>
                                             </div>

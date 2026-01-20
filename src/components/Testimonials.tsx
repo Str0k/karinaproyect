@@ -82,27 +82,27 @@ export default function Testimonials() {
                                 animate={{ opacity: 1, x: 0 }}
                                 exit={{ opacity: 0, x: -50 }}
                                 transition={{ duration: 0.3 }}
-                                className="bg-white rounded-3xl p-8 md:p-12 shadow-lg relative"
+                                className="bg-white rounded-3xl p-6 sm:p-8 md:p-12 shadow-lg relative"
                             >
                                 {/* Quote Icon */}
                                 <Quote
                                     size={48}
-                                    className="absolute top-6 right-6 text-[#FF6B6B]/10"
+                                    className="absolute top-4 right-4 sm:top-6 sm:right-6 text-[#FF6B6B]/10"
                                 />
 
                                 {/* Stars */}
-                                <div className="flex gap-1 mb-6">
+                                <div className="flex gap-1 mb-4 sm:mb-6">
                                     {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
                                         <Star
                                             key={i}
-                                            size={24}
-                                            className="text-yellow-400 fill-yellow-400"
+                                            size={20}
+                                            className="text-yellow-400 fill-yellow-400 sm:w-6 sm:h-6"
                                         />
                                     ))}
                                 </div>
 
                                 {/* Content */}
-                                <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8 italic">
+                                <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed mb-6 sm:mb-8 italic">
                                     &ldquo;{testimonials[currentIndex].content}&rdquo;
                                 </p>
 
@@ -152,8 +152,8 @@ export default function Testimonials() {
                                     key={index}
                                     onClick={() => setCurrentIndex(index)}
                                     className={`w-2.5 h-2.5 rounded-full transition-all ${index === currentIndex
-                                            ? "bg-[#FF6B6B] w-8"
-                                            : "bg-gray-300 hover:bg-gray-400"
+                                        ? "bg-[#FF6B6B] w-8"
+                                        : "bg-gray-300 hover:bg-gray-400"
                                         }`}
                                     aria-label={`Go to testimonial ${index + 1}`}
                                 />

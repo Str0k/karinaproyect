@@ -9,26 +9,26 @@
   --color-coral-primary: #FF6B6B;
   --color-coral-light: #FF9A8B;
   --color-peachy-pink: #FECFEF;
-  
+
   /* Secondary Colors */
   --color-teal: #4ECDC4;
   --color-teal-light: #A8E6CF;
-  
+
   /* Neutral Colors */
   --color-cream: #FFFBF0;
   --color-warm-gray: #F5F5F5;
   --color-dark-navy: #2C3E50;
   --color-gray-600: #6B7280;
-  
+
   /* Background */
   --background: #FFFBF0;
   --foreground: #2C3E50;
-  
+
   /* Shadows */
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 10px 20px rgba(0, 0, 0, 0.05);
   --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1), 0 20px 40px rgba(0, 0, 0, 0.08);
-  
+
   /* Transitions */
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
@@ -67,7 +67,12 @@ body {
    TYPOGRAPHY
    ======================================== */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-sans), system-ui, sans-serif;
   font-weight: 700;
   line-height: 1.2;
@@ -95,7 +100,13 @@ p {
    ======================================== */
 
 .section-padding {
-  padding: 5rem 1.5rem;
+  padding: 3rem 1rem;
+}
+
+@media (min-width: 480px) {
+  .section-padding {
+    padding: 4rem 1.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -197,18 +208,24 @@ p {
    ======================================== */
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-10px);
   }
 }
 
 @keyframes pulse-soft {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.8;
   }
