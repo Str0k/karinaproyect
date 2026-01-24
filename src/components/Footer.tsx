@@ -52,7 +52,7 @@ export default function Footer() {
                         <a href="#" className="text-3xl font-bold mb-4 block">
                             <span className="text-[#84E2C2]">CareBy</span>KG
                         </a>
-                        <p className="text-gray-400 mb-6">
+                        <p className="text-gray-300 mb-6 leading-relaxed">
                             Professional childcare services for Kansas City families.
                             Specializing in event babysitting, in-home care, and bilingual
                             services.
@@ -83,7 +83,7 @@ export default function Footer() {
                                 <li key={link.name}>
                                     <button
                                         onClick={() => scrollToSection(link.href)}
-                                        className="text-gray-400 hover:text-[#84E2C2] hover:pl-2 transition-all"
+                                        className="text-gray-300 hover:text-[#84E2C2] hover:pl-2 transition-all text-left"
                                     >
                                         {link.name}
                                     </button>
@@ -104,7 +104,7 @@ export default function Footer() {
                             {serviceAreas.map((area) => (
                                 <li key={area} className="flex items-center gap-2">
                                     <MapPin size={14} className="text-[#84E2C2]" />
-                                    <span className="text-gray-400">{area}</span>
+                                    <span className="text-gray-300 hover:text-white transition-colors">{area}</span>
                                 </li>
                             ))}
                         </ul>
@@ -122,9 +122,9 @@ export default function Footer() {
                             <li>
                                 <a
                                     href="tel:+19132069322"
-                                    className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors"
+                                    className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group"
                                 >
-                                    <div className="w-10 h-10 bg-[#84E2C2]/20 rounded-full flex items-center justify-center">
+                                    <div className="w-10 h-10 bg-[#84E2C2]/10 rounded-full flex items-center justify-center group-hover:bg-[#84E2C2]/20 transition-colors">
                                         <Phone size={18} className="text-[#84E2C2]" />
                                     </div>
                                     (913) 206-9322
@@ -133,9 +133,9 @@ export default function Footer() {
                             <li>
                                 <a
                                     href="mailto:karigss95@gmail.com"
-                                    className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors"
+                                    className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group"
                                 >
-                                    <div className="w-10 h-10 bg-[#9EE9D1]/20 rounded-full flex items-center justify-center">
+                                    <div className="w-10 h-10 bg-[#9EE9D1]/10 rounded-full flex items-center justify-center group-hover:bg-[#9EE9D1]/20 transition-colors">
                                         <Mail size={18} className="text-[#9EE9D1]" />
                                     </div>
                                     karigss95@gmail.com
@@ -146,7 +146,7 @@ export default function Footer() {
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
                             onClick={() => scrollToSection("#contact")}
-                            className="btn-primary mt-6 w-full"
+                            className="w-full mt-6 px-6 py-3 bg-gradient-to-r from-[#84E2C2] to-[#2D9A78] text-white font-bold rounded-xl shadow-lg hover:shadow-[#84E2C2]/20 transition-all"
                         >
                             Book Now
                         </motion.button>
@@ -155,8 +155,8 @@ export default function Footer() {
             </div>
 
             {/* Bottom Bar */}
-            <div className="border-t border-white/10">
-                <div className="container-custom py-6">
+            <div className="border-t border-white/10 bg-[#152e2e]">
+                <div className="container-custom py-8">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                         <p className="text-gray-400 text-sm text-center md:text-left">
                             © {currentYear} CareByKG. All rights reserved.
@@ -167,6 +167,6 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer >
     );
 }

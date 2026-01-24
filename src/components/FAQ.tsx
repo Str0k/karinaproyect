@@ -167,24 +167,55 @@ export default function FAQ() {
                 </div>
 
                 {/* Still Have Questions */}
+                {/* Still Have Questions - Premium CTA Card */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className="text-center mt-12"
+                    className="mt-20 max-w-4xl mx-auto"
                 >
-                    <p className="text-[#4A6D6D] mb-4">
-                        Still have questions? I&apos;m happy to help!
-                    </p>
-                    <motion.a
-                        href="#contact"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="btn-primary inline-flex"
-                    >
-                        Get in Touch
-                    </motion.a>
+                    <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#1A3A3A] to-[#2D5A5A] p-8 md:p-12 shadow-2xl text-center">
+                        {/* Decorative Background Elements */}
+                        <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+                            <div className="absolute top-[-50%] left-[-20%] w-[500px] h-[500px] bg-[#84E2C2]/10 rounded-full blur-[100px]" />
+                            <div className="absolute bottom-[-50%] right-[-20%] w-[500px] h-[500px] bg-[#9EE9D1]/10 rounded-full blur-[100px]" />
+                        </div>
+
+                        <div className="relative z-10 flex flex-col items-center">
+                            <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-6 backdrop-blur-sm border border-white/10">
+                                <HelpCircle size={32} className="text-[#84E2C2]" />
+                            </div>
+
+                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                                Still have questions?
+                            </h3>
+
+                            <p className="text-gray-200 text-lg mb-8 max-w-xl mx-auto leading-relaxed">
+                                I understand that choosing childcare is a big decision. I'm here to answer any other questions you might have!
+                            </p>
+
+                            <div className="flex flex-col sm:flex-row gap-4">
+                                <motion.a
+                                    href="#contact"
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    className="px-8 py-3 bg-[#84E2C2] text-[#1A3A3A] font-bold rounded-full hover:bg-[#72D0B2] transition-colors shadow-lg shadow-[#84E2C2]/20"
+                                >
+                                    Message Me
+                                </motion.a>
+
+                                <motion.a
+                                    href="tel:+19132069322"
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    className="px-8 py-3 bg-white/10 text-white font-bold rounded-full hover:bg-white/20 transition-colors backdrop-blur-sm border border-white/20"
+                                >
+                                    Call Now
+                                </motion.a>
+                            </div>
+                        </div>
+                    </div>
                 </motion.div>
             </div>
         </section>
