@@ -103,7 +103,7 @@ export default function Biography() {
                                 <div className="relative rounded-[1.5rem] overflow-hidden m-3 shadow-2xl">
                                     <div className="aspect-[3/4] relative">
                                         <Image
-                                            src="/images/karina-profile.jpg"
+                                            src="/images/karina-bio.jpg"
                                             alt="Karina - Professional Childcare Provider"
                                             fill
                                             className="object-cover object-top"
