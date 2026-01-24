@@ -47,7 +47,7 @@ export default function Hero() {
                 />
             </div>
 
-            <div className="container-custom relative z-10 pt-32 sm:pt-28 lg:pt-24 pb-16">
+            <div className="container-custom relative z-10 pt-32 sm:pt-28 lg:pt-24 pb-16 hero-mobile-wrap">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Content */}
                     <motion.div
@@ -100,10 +100,10 @@ export default function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.3 }}
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#2C3E50] mb-6 leading-tight"
+                            className="hero-title text-4xl md:text-5xl lg:text-6xl font-bold text-[#2C3E50] mb-6 leading-tight"
                         >
                             Trusted Childcare for Your{" "}
-                            <span className="text-[#2D9A78]">Special Events</span>
+                            <span className="hero-title-accent">Special Events</span>
                         </motion.h1>
 
                         {/* Subheadline */}
@@ -181,9 +181,9 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.3 }}
-                        className="relative lg:hidden mb-8 order-1"
+                        className="hero-mobile-media relative lg:hidden mb-10 order-1 mt-6"
                     >
-                        <div className="relative max-w-sm mx-auto">
+                        <div className="relative max-w-sm mx-auto pt-4">
                             {/* Outer Glow */}
                             <motion.div
                                 animate={{ opacity: [0.5, 0.8, 0.5] }}
