@@ -8,7 +8,7 @@ const faqs = [
     {
         question: "What are your rates?",
         answer:
-            "Rates vary based on the type of service, number of children, and duration. For in-home babysitting, rates start at $20/hour for one child. Event childcare has custom pricing based on event size and duration. Contact me for a personalized quote!",
+            "Rates vary based on the type of service, number of children, and duration. Please contact me via call or message for a personalized quote tailored to your needs!",
     },
     {
         question: "What is your cancellation policy?",
