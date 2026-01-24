@@ -63,15 +63,15 @@ export default function FAQ() {
     };
 
     return (
-        <section ref={sectionRef} className="section-padding gradient-section relative overflow-hidden">
+        <section ref={sectionRef} className="section-padding relative overflow-hidden" style={{ background: "linear-gradient(180deg, #D1F8F0 0%, #EBFFFF 50%, #FAFFFE 100%)" }}>
             {/* Parallax Decorative Elements */}
             <motion.div
                 style={{ y: decorY1 }}
-                className="absolute top-24 -left-20 w-48 h-48 bg-gradient-to-br from-[#4ECDC4]/15 to-[#A8E6CF]/10 rounded-full blur-3xl pointer-events-none"
+                className="absolute top-24 -left-20 w-48 h-48 bg-gradient-to-br from-[#84E2C2]/20 to-[#B8F1E1]/15 rounded-full blur-3xl pointer-events-none"
             />
             <motion.div
                 style={{ y: decorY2 }}
-                className="absolute bottom-24 -right-20 w-56 h-56 bg-gradient-to-br from-[#FF6B6B]/10 to-[#FECFEF]/15 rounded-full blur-3xl pointer-events-none"
+                className="absolute bottom-24 -right-20 w-56 h-56 bg-gradient-to-br from-[#9EE9D1]/15 to-[#D1F8F0]/20 rounded-full blur-3xl pointer-events-none"
             />
 
             <div className="container-custom relative z-10">
@@ -83,14 +83,14 @@ export default function FAQ() {
                     transition={{ duration: 0.5 }}
                     className="text-center max-w-3xl mx-auto mb-16"
                 >
-                    <span className="inline-block px-4 py-2 bg-[#4ECDC4]/10 text-[#4ECDC4] font-semibold rounded-full text-sm mb-4">
+                    <span className="inline-block px-4 py-2 bg-[#84E2C2]/20 text-[#2D9A78] font-semibold rounded-full text-sm mb-4">
                         FAQ
                     </span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#2C3E50] mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#1A3A3A] mb-4">
                         Frequently Asked{" "}
-                        <span className="text-[#FF6B6B]">Questions</span>
+                        <span className="text-[#2D9A78]">Questions</span>
                     </h2>
-                    <p className="text-gray-600 text-lg">
+                    <p className="text-[#4A6D6D] text-lg">
                         Have questions? I&apos;ve got answers. Find everything you need to
                         know about my childcare services.
                     </p>
@@ -113,18 +113,19 @@ export default function FAQ() {
                                     ? "bg-white shadow-lg"
                                     : "bg-white/50 hover:bg-white hover:shadow-md"
                                     }`}
+                                style={openIndex === index ? { boxShadow: "0 10px 30px rgba(132, 226, 194, 0.2)" } : {}}
                             >
                                 <div className="flex items-center gap-3 sm:gap-4">
                                     <div
                                         className={`w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0 transition-colors ${openIndex === index
-                                            ? "bg-[#FF6B6B] text-white"
-                                            : "bg-[#FF6B6B]/10 text-[#FF6B6B]"
+                                            ? "bg-[#2D9A78] text-white"
+                                            : "bg-[#84E2C2]/20 text-[#2D9A78]"
                                             }`}
                                     >
                                         <HelpCircle size={18} className="sm:hidden" />
                                         <HelpCircle size={20} className="hidden sm:block" />
                                     </div>
-                                    <span className="font-semibold text-[#2C3E50] text-sm sm:text-base">
+                                    <span className="font-semibold text-[#1A3A3A] text-sm sm:text-base">
                                         {faq.question}
                                     </span>
                                 </div>
@@ -136,7 +137,7 @@ export default function FAQ() {
                                     <ChevronDown
                                         size={24}
                                         className={
-                                            openIndex === index ? "text-[#FF6B6B]" : "text-gray-400"
+                                            openIndex === index ? "text-[#2D9A78]" : "text-[#9EE9D1]"
                                         }
                                     />
                                 </motion.div>
@@ -151,9 +152,9 @@ export default function FAQ() {
                                         transition={{ duration: 0.3 }}
                                         className="overflow-hidden"
                                     >
-                                        <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-2 bg-white rounded-b-2xl -mt-4 shadow-lg">
+                                        <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-2 bg-white rounded-b-2xl -mt-4 shadow-lg" style={{ boxShadow: "0 10px 30px rgba(132, 226, 194, 0.15)" }}>
                                             <div className="pl-0 sm:pl-14">
-                                                <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
+                                                <p className="text-[#4A6D6D] leading-relaxed text-sm sm:text-base">
                                                     {faq.answer}
                                                 </p>
                                             </div>
@@ -173,7 +174,7 @@ export default function FAQ() {
                     transition={{ duration: 0.5, delay: 0.3 }}
                     className="text-center mt-12"
                 >
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-[#4A6D6D] mb-4">
                         Still have questions? I&apos;m happy to help!
                     </p>
                     <motion.a

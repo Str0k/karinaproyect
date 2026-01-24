@@ -78,7 +78,7 @@ export default function FloatingContactBubble() {
                                     whileTap={{ scale: 0.95 }}
                                     className="flex items-center gap-3 bg-white rounded-full shadow-xl pl-4 pr-5 py-3 group"
                                 >
-                                    <div className="w-12 h-12 bg-gradient-to-br from-[#4ECDC4] to-[#2CB5A0] rounded-full flex items-center justify-center shadow-lg">
+                                    <div className="w-12 h-12 bg-gradient-to-br from-[#84E2C2] to-[#2D9A78] rounded-full flex items-center justify-center shadow-lg">
                                         <Phone size={22} className="text-white" />
                                     </div>
                                     <div className="text-left">
@@ -96,14 +96,14 @@ export default function FloatingContactBubble() {
                                     whileTap={{ scale: 0.95 }}
                                     className="flex items-center gap-3 bg-white rounded-full shadow-xl pl-4 pr-5 py-3 group"
                                 >
-                                    <div className="w-12 h-12 bg-gradient-to-br from-[#FF6B6B] to-[#FF9A8B] rounded-full flex items-center justify-center shadow-lg">
+                                    <div className="w-12 h-12 bg-gradient-to-br from-[#9EE9D1] to-[#84E2C2] rounded-full flex items-center justify-center shadow-lg">
                                         <MessageCircle size={22} className="text-white" />
                                     </div>
                                     <div className="text-left">
                                         <p className="text-xs text-gray-500 font-medium">
                                             Text Message
                                         </p>
-                                        <p className="text-sm font-bold text-[#2C3E50]">
+                                        <p className="text-sm font-bold text-[#1A3A3A]">
                                             (913) 206-9322
                                         </p>
                                     </div>
@@ -120,7 +120,7 @@ export default function FloatingContactBubble() {
                         className="relative w-16 h-16 rounded-full shadow-2xl flex items-center justify-center overflow-hidden"
                         style={{
                             background:
-                                "linear-gradient(135deg, #FF6B6B 0%, #FF9A8B 50%, #FECFEF 100%)",
+                                "linear-gradient(135deg, #84E2C2 0%, #9EE9D1 50%, #D1F8F0 100%)",
                         }}
                     >
                         {/* Animated Ring */}
@@ -134,7 +134,7 @@ export default function FloatingContactBubble() {
                                 repeat: Infinity,
                                 ease: "easeInOut",
                             }}
-                            className="absolute inset-0 rounded-full border-2 border-[#FF6B6B]"
+                            className="absolute inset-0 rounded-full border-2 border-[#84E2C2]"
                         />
 
                         {/* Second Ring */}
@@ -149,7 +149,7 @@ export default function FloatingContactBubble() {
                                 ease: "easeInOut",
                                 delay: 0.5,
                             }}
-                            className="absolute inset-0 rounded-full border-2 border-[#FF9A8B]"
+                            className="absolute inset-0 rounded-full border-2 border-[#9EE9D1]"
                         />
 
                         {/* Icon */}

@@ -58,15 +58,15 @@ export default function Testimonials() {
     };
 
     return (
-        <section id="testimonials" ref={sectionRef} className="section-padding gradient-section relative overflow-hidden">
+        <section id="testimonials" ref={sectionRef} className="section-padding relative overflow-hidden" style={{ background: "linear-gradient(180deg, #EBFFFF 0%, #D1F8F0 50%, #FAFFFE 100%)" }}>
             {/* Parallax Decorative Elements */}
             <motion.div
                 style={{ y: decorY1, scale: decorScale }}
-                className="absolute top-20 left-10 w-40 h-40 bg-gradient-to-br from-[#FFD700]/15 to-[#FF6B6B]/10 rounded-full blur-3xl pointer-events-none"
+                className="absolute top-20 left-10 w-40 h-40 bg-gradient-to-br from-[#84E2C2]/25 to-[#9EE9D1]/20 rounded-full blur-3xl pointer-events-none"
             />
             <motion.div
                 style={{ y: decorY2 }}
-                className="absolute bottom-20 right-10 w-52 h-52 bg-gradient-to-br from-[#4ECDC4]/15 to-[#A8E6CF]/10 rounded-full blur-3xl pointer-events-none"
+                className="absolute bottom-20 right-10 w-52 h-52 bg-gradient-to-br from-[#9EE9D1]/25 to-[#B8F1E1]/20 rounded-full blur-3xl pointer-events-none"
             />
 
             <div className="container-custom relative z-10">
@@ -78,13 +78,13 @@ export default function Testimonials() {
                     transition={{ duration: 0.5 }}
                     className="text-center max-w-3xl mx-auto mb-16"
                 >
-                    <span className="inline-block px-4 py-2 bg-[#4ECDC4]/10 text-[#4ECDC4] font-semibold rounded-full text-sm mb-4">
+                    <span className="inline-block px-4 py-2 bg-[#84E2C2]/20 text-[#2D9A78] font-semibold rounded-full text-sm mb-4">
                         Testimonials
                     </span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#2C3E50] mb-4">
-                        What <span className="text-[#FF6B6B]">Parents Say</span>
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#1A3A3A] mb-4">
+                        What <span className="text-[#2D9A78]">Parents Say</span>
                     </h2>
-                    <p className="text-gray-600 text-lg">
+                    <p className="text-[#4A6D6D] text-lg">
                         Don&apos;t just take my word for it—hear from families I&apos;ve had the
                         pleasure of working with.
                     </p>
@@ -102,11 +102,12 @@ export default function Testimonials() {
                                 exit={{ opacity: 0, x: -50 }}
                                 transition={{ duration: 0.3 }}
                                 className="bg-white rounded-3xl p-6 sm:p-8 md:p-12 shadow-lg relative"
+                                style={{ boxShadow: "0 10px 40px rgba(132, 226, 194, 0.2)" }}
                             >
                                 {/* Quote Icon */}
                                 <Quote
                                     size={48}
-                                    className="absolute top-4 right-4 sm:top-6 sm:right-6 text-[#FF6B6B]/10"
+                                    className="absolute top-4 right-4 sm:top-6 sm:right-6 text-[#84E2C2]/20"
                                 />
 
                                 {/* Stars */}
@@ -121,20 +122,20 @@ export default function Testimonials() {
                                 </div>
 
                                 {/* Content */}
-                                <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed mb-6 sm:mb-8 italic">
+                                <p className="text-base sm:text-lg md:text-xl text-[#4A6D6D] leading-relaxed mb-6 sm:mb-8 italic">
                                     &ldquo;{testimonials[currentIndex].content}&rdquo;
                                 </p>
 
                                 {/* Author */}
                                 <div className="flex items-center gap-4">
-                                    <div className="w-14 h-14 bg-gradient-to-br from-[#FF6B6B] to-[#FF9A8B] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                    <div className="w-14 h-14 bg-gradient-to-br from-[#84E2C2] to-[#9EE9D1] rounded-full flex items-center justify-center text-white font-bold text-xl">
                                         {testimonials[currentIndex].name.charAt(0)}
                                     </div>
                                     <div>
-                                        <p className="font-bold text-[#2C3E50]">
+                                        <p className="font-bold text-[#1A3A3A]">
                                             {testimonials[currentIndex].name}
                                         </p>
-                                        <p className="text-gray-500 text-sm">
+                                        <p className="text-[#4A6D6D] text-sm">
                                             {testimonials[currentIndex].role}
                                         </p>
                                     </div>
@@ -148,7 +149,7 @@ export default function Testimonials() {
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }}
                                 onClick={prevTestimonial}
-                                className="w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center text-[#2C3E50] hover:bg-[#FF6B6B] hover:text-white transition-colors"
+                                className="w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center text-[#1A3A3A] hover:bg-[#84E2C2] hover:text-white transition-colors"
                                 aria-label="Previous testimonial"
                             >
                                 <ChevronLeft size={24} />
@@ -157,7 +158,7 @@ export default function Testimonials() {
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }}
                                 onClick={nextTestimonial}
-                                className="w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center text-[#2C3E50] hover:bg-[#FF6B6B] hover:text-white transition-colors"
+                                className="w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center text-[#1A3A3A] hover:bg-[#84E2C2] hover:text-white transition-colors"
                                 aria-label="Next testimonial"
                             >
                                 <ChevronRight size={24} />
@@ -171,8 +172,8 @@ export default function Testimonials() {
                                     key={index}
                                     onClick={() => setCurrentIndex(index)}
                                     className={`w-2.5 h-2.5 rounded-full transition-all ${index === currentIndex
-                                        ? "bg-[#FF6B6B] w-8"
-                                        : "bg-gray-300 hover:bg-gray-400"
+                                        ? "bg-[#2D9A78] w-8"
+                                        : "bg-[#B8F1E1] hover:bg-[#9EE9D1]"
                                         }`}
                                     aria-label={`Go to testimonial ${index + 1}`}
                                 />
@@ -189,15 +190,15 @@ export default function Testimonials() {
                     transition={{ duration: 0.5, delay: 0.3 }}
                     className="mt-16 flex flex-wrap justify-center gap-6"
                 >
-                    <div className="flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-md">
-                        <ShieldCheck size={24} className="text-[#4ECDC4]" />
-                        <span className="font-medium text-[#2C3E50]">
+                    <div className="flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-md" style={{ boxShadow: "0 4px 20px rgba(132, 226, 194, 0.2)" }}>
+                        <ShieldCheck size={24} className="text-[#2D9A78]" />
+                        <span className="font-medium text-[#1A3A3A]">
                             Background Check Verified
                         </span>
                     </div>
-                    <div className="flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-md">
-                        <FileCheck size={24} className="text-[#FF6B6B]" />
-                        <span className="font-medium text-[#2C3E50]">
+                    <div className="flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-md" style={{ boxShadow: "0 4px 20px rgba(132, 226, 194, 0.2)" }}>
+                        <FileCheck size={24} className="text-[#84E2C2]" />
+                        <span className="font-medium text-[#1A3A3A]">
                             Professional References Available
                         </span>
                     </div>

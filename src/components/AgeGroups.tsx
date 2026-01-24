@@ -17,8 +17,8 @@ const ageGroups = [
         ],
         approach:
             "Nurturing, gentle care with attention to your baby's unique schedule and comfort needs.",
-        color: "#FF6B6B",
-        bgColor: "#FEE5E5",
+        color: "#2D9A78",
+        bgColor: "#D1F8F0",
     },
     {
         icon: Blocks,
@@ -32,8 +32,8 @@ const ageGroups = [
         ],
         approach:
             "Engaged, patient care that encourages curiosity and independence through guided play.",
-        color: "#4ECDC4",
-        bgColor: "#E0F7F5",
+        color: "#84E2C2",
+        bgColor: "#EBFFFF",
     },
     {
         icon: BookOpen,
@@ -47,8 +47,8 @@ const ageGroups = [
         ],
         approach:
             "Fun, interactive care that balances learning, creativity, and active play.",
-        color: "#6C5CE7",
-        bgColor: "#EDE9FE",
+        color: "#1E7A5E",
+        bgColor: "#B8F1E1",
     },
 ];
 
@@ -64,15 +64,15 @@ export default function AgeGroups() {
     const decorRotate = useTransform(scrollYProgress, [0, 1], [-10, 10]);
 
     return (
-        <section ref={sectionRef} className="section-padding bg-[#FFFBF0] relative overflow-hidden">
+        <section ref={sectionRef} className="section-padding relative overflow-hidden" style={{ background: "linear-gradient(180deg, #FAFFFE 0%, #EBFFFF 100%)" }}>
             {/* Parallax Decorative Elements */}
             <motion.div
                 style={{ y: decorY1, rotate: decorRotate }}
-                className="absolute top-32 -right-16 w-36 h-36 bg-gradient-to-br from-[#6C5CE7]/15 to-[#EDE9FE]/20 rounded-full blur-2xl pointer-events-none"
+                className="absolute top-32 -right-16 w-36 h-36 bg-gradient-to-br from-[#84E2C2]/20 to-[#B8F1E1]/25 rounded-full blur-2xl pointer-events-none"
             />
             <motion.div
                 style={{ y: decorY2 }}
-                className="absolute bottom-32 -left-16 w-44 h-44 bg-gradient-to-br from-[#FF6B6B]/10 to-[#FECFEF]/15 rounded-full blur-3xl pointer-events-none"
+                className="absolute bottom-32 -left-16 w-44 h-44 bg-gradient-to-br from-[#9EE9D1]/20 to-[#D1F8F0]/25 rounded-full blur-3xl pointer-events-none"
             />
 
             <div className="container-custom relative z-10">
@@ -84,13 +84,13 @@ export default function AgeGroups() {
                     transition={{ duration: 0.5 }}
                     className="text-center max-w-3xl mx-auto mb-16"
                 >
-                    <span className="inline-block px-4 py-2 bg-[#FF6B6B]/10 text-[#FF6B6B] font-semibold rounded-full text-sm mb-4">
+                    <span className="inline-block px-4 py-2 bg-[#84E2C2]/20 text-[#2D9A78] font-semibold rounded-full text-sm mb-4">
                         Age Groups
                     </span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#2C3E50] mb-4">
-                        Care for <span className="text-[#FF6B6B]">Every Age</span>
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#1A3A3A] mb-4">
+                        Care for <span className="text-[#2D9A78]">Every Age</span>
                     </h2>
-                    <p className="text-gray-600 text-lg">
+                    <p className="text-[#4A6D6D] text-lg">
                         Age-appropriate activities and care tailored to each developmental
                         stage.
                     </p>
@@ -110,6 +110,7 @@ export default function AgeGroups() {
                                 whileHover={{ y: -8 }}
                                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                                 className="card h-full relative overflow-hidden"
+                                style={{ boxShadow: "0 4px 20px rgba(132, 226, 194, 0.15)" }}
                             >
                                 {/* Decorative Background */}
                                 <div
@@ -127,7 +128,7 @@ export default function AgeGroups() {
                                             <group.icon size={32} style={{ color: group.color }} />
                                         </div>
                                         <div>
-                                            <h3 className="text-xl font-bold text-[#2C3E50]">
+                                            <h3 className="text-xl font-bold text-[#1A3A3A]">
                                                 {group.title}
                                             </h3>
                                             <span
@@ -141,7 +142,7 @@ export default function AgeGroups() {
 
                                     {/* Activities */}
                                     <div className="mb-6">
-                                        <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">
+                                        <h4 className="text-sm font-semibold text-[#4A6D6D] uppercase tracking-wide mb-3">
                                             Typical Activities
                                         </h4>
                                         <ul className="space-y-2">
@@ -151,7 +152,7 @@ export default function AgeGroups() {
                                                         className="w-1.5 h-1.5 rounded-full"
                                                         style={{ backgroundColor: group.color }}
                                                     />
-                                                    <span className="text-gray-600 text-sm">
+                                                    <span className="text-[#4A6D6D] text-sm">
                                                         {activity}
                                                     </span>
                                                 </li>

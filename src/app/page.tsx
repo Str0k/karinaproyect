@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Biography from "@/components/Biography";
 import Services from "@/components/Services";
 import WhyTrust from "@/components/WhyTrust";
 import AgeGroups from "@/components/AgeGroups";
@@ -20,6 +21,9 @@ export default function Home() {
 
       {/* Hero Section - Full width with gradient */}
       <Hero />
+
+      {/* Biography Section - About Karina */}
+      <Biography />
 
       {/* Services Section - What I Offer */}
       <Services />

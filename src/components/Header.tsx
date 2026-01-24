@@ -46,9 +46,9 @@ export default function Header() {
                     {/* Logo */}
                     <a
                         href="#"
-                        className="text-2xl font-bold text-[#2C3E50] hover:text-[#FF6B6B] transition-colors"
+                        className="text-2xl font-bold text-[#1A3A3A] hover:text-[#2D9A78] transition-colors"
                     >
-                        <span className="text-[#FF6B6B]">Kari</span>Care
+                        <span className="text-[#2D9A78]">CareBy</span>KG
                     </a>
 
                     {/* Desktop Navigation */}
@@ -57,7 +57,7 @@ export default function Header() {
                             <button
                                 key={link.name}
                                 onClick={() => scrollToSection(link.href)}
-                                className="text-[#2C3E50] hover:text-[#FF6B6B] font-medium transition-colors"
+                                className="text-[#1A3A3A] hover:text-[#2D9A78] font-medium transition-colors"
                             >
                                 {link.name}
                             </button>
@@ -68,7 +68,7 @@ export default function Header() {
                     <div className="hidden md:flex items-center gap-4">
                         <a
                             href="tel:+19132069322"
-                            className="flex items-center gap-2 text-[#2C3E50] hover:text-[#FF6B6B] transition-colors"
+                            className="flex items-center gap-2 text-[#1A3A3A] hover:text-[#2D9A78] transition-colors"
                         >
                             <Phone size={18} />
                             <span className="font-medium">(913) 206-9322</span>
@@ -119,7 +119,7 @@ export default function Header() {
                             <button
                                 key={link.name}
                                 onClick={() => scrollToSection(link.href)}
-                                className="text-left text-lg font-medium text-[#2C3E50] hover:text-[#FF6B6B] py-3 border-b border-gray-100 transition-colors"
+                                className="text-left text-lg font-medium text-[#1A3A3A] hover:text-[#2D9A78] py-3 border-b border-gray-100 transition-colors"
                             >
                                 {link.name}
                             </button>

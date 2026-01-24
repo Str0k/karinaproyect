@@ -10,32 +10,32 @@ const services = [
         title: "Private In-Home Babysitting",
         description:
             "Personalized care in the comfort of your home. One-on-one attention ensuring your child's routine and needs are perfectly met.",
-        color: "#FF6B6B",
-        bgColor: "#FEE5E5",
+        color: "#2D9A78",
+        bgColor: "#D1F8F0",
     },
     {
         icon: Moon,
         title: "Evening & Overnight Care",
         description:
             "Reliable coverage when you need it most. Date nights, work commitments, or just a well-deserved break—I've got you covered.",
-        color: "#4ECDC4",
-        bgColor: "#E0F7F5",
+        color: "#84E2C2",
+        bgColor: "#EBFFFF",
     },
     {
         icon: PartyPopper,
         title: "Event & Party Childcare",
         description:
             "Let kids have fun while you enjoy your celebration. Organized activities and supervision for birthdays, weddings, and gatherings.",
-        color: "#FF9A8B",
-        bgColor: "#FFEBE8",
+        color: "#2D9A78",
+        bgColor: "#B8F1E1",
     },
     {
         icon: Languages,
         title: "Spanish Language Exposure",
         description:
             "Bilingual engagement for cultural enrichment. Introducing Spanish through natural interaction, songs, and playful learning.",
-        color: "#6C5CE7",
-        bgColor: "#EDE9FE",
+        color: "#1E7A5E",
+        bgColor: "#9EE9D1",
     },
 ];
 
@@ -52,19 +52,19 @@ export default function Services() {
     const decorRotate = useTransform(scrollYProgress, [0, 1], [0, 15]);
 
     return (
-        <section id="services" ref={sectionRef} className="section-padding bg-[#FFFBF0] relative overflow-hidden">
+        <section id="services" ref={sectionRef} className="section-padding relative overflow-hidden" style={{ background: "linear-gradient(180deg, #FAFFFE 0%, #EBFFFF 100%)" }}>
             {/* Parallax Decorative Elements */}
             <motion.div
                 style={{ y: decorY1, rotate: decorRotate }}
-                className="absolute top-20 -left-20 w-40 h-40 bg-gradient-to-br from-[#FF6B6B]/10 to-[#FECFEF]/10 rounded-full blur-3xl pointer-events-none"
+                className="absolute top-20 -left-20 w-40 h-40 bg-gradient-to-br from-[#84E2C2]/20 to-[#D1F8F0]/20 rounded-full blur-3xl pointer-events-none"
             />
             <motion.div
                 style={{ y: decorY2 }}
-                className="absolute bottom-40 -right-20 w-60 h-60 bg-gradient-to-br from-[#4ECDC4]/10 to-[#A8E6CF]/10 rounded-full blur-3xl pointer-events-none"
+                className="absolute bottom-40 -right-20 w-60 h-60 bg-gradient-to-br from-[#9EE9D1]/20 to-[#B8F1E1]/20 rounded-full blur-3xl pointer-events-none"
             />
             <motion.div
                 style={{ y: backgroundY }}
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-[#FF6B6B]/5 to-transparent rounded-full pointer-events-none"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-[#84E2C2]/10 to-transparent rounded-full pointer-events-none"
             />
 
             <div className="container-custom relative z-10">
@@ -76,14 +76,14 @@ export default function Services() {
                     transition={{ duration: 0.5 }}
                     className="text-center max-w-3xl mx-auto mb-16"
                 >
-                    <span className="inline-block px-4 py-2 bg-[#FF6B6B]/10 text-[#FF6B6B] font-semibold rounded-full text-sm mb-4">
+                    <span className="inline-block px-4 py-2 bg-[#84E2C2]/20 text-[#2D9A78] font-semibold rounded-full text-sm mb-4">
                         What I Offer
                     </span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#2C3E50] mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#1A3A3A] mb-4">
                         Childcare Services Tailored to{" "}
-                        <span className="text-[#FF6B6B]">Your Needs</span>
+                        <span className="text-[#2D9A78]">Your Needs</span>
                     </h2>
-                    <p className="text-gray-600 text-lg">
+                    <p className="text-[#4A6D6D] text-lg">
                         From everyday babysitting to special events, I provide professional,
                         nurturing care that gives you peace of mind.
                     </p>
@@ -117,10 +117,10 @@ export default function Services() {
                                     </div>
 
                                     {/* Content */}
-                                    <h3 className="text-xl font-bold text-[#2C3E50] mb-3">
+                                    <h3 className="text-xl font-bold text-[#1A3A3A] mb-3">
                                         {service.title}
                                     </h3>
-                                    <p className="text-gray-600 flex-grow mb-4">
+                                    <p className="text-[#4A6D6D] flex-grow mb-4">
                                         {service.description}
                                     </p>
 
@@ -156,7 +156,7 @@ export default function Services() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.2 }}
-                                className="inline-block px-4 py-2 bg-[#6C5CE7]/10 text-[#6C5CE7] font-semibold rounded-full text-sm mb-4"
+                                className="inline-block px-4 py-2 bg-[#9EE9D1]/30 text-[#1E7A5E] font-semibold rounded-full text-sm mb-4"
                             >
                                 Featured Activity
                             </motion.span>
@@ -165,17 +165,17 @@ export default function Services() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.3 }}
-                                className="text-2xl md:text-3xl font-bold text-[#2C3E50] mb-4"
+                                className="text-2xl md:text-3xl font-bold text-[#1A3A3A] mb-4"
                             >
                                 Arts & Crafts{" "}
-                                <span className="text-[#FF6B6B]">Adventures</span>
+                                <span className="text-[#2D9A78]">Adventures</span>
                             </motion.h3>
                             <motion.p
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.4 }}
-                                className="text-gray-600 text-lg leading-relaxed mb-6"
+                                className="text-[#4A6D6D] text-lg leading-relaxed mb-6"
                             >
                                 Creativity knows no bounds! From painting masterpieces to building crafts,
                                 every session is filled with colorful activities that help children express
@@ -199,7 +199,7 @@ export default function Services() {
                         {/* Image with Premium Frame */}
                         <div className="relative order-1 lg:order-2">
                             {/* Outer Glow */}
-                            <div className="absolute -inset-6 bg-gradient-to-br from-[#6C5CE7]/30 via-[#FECFEF]/20 to-[#FF6B6B]/30 rounded-[3rem] blur-2xl opacity-60" />
+                            <div className="absolute -inset-6 bg-gradient-to-br from-[#84E2C2]/30 via-[#D1F8F0]/20 to-[#9EE9D1]/30 rounded-[3rem] blur-2xl opacity-60" />
 
                             <motion.div
                                 whileHover={{ scale: 1.02, rotate: -1 }}
@@ -207,7 +207,7 @@ export default function Services() {
                                 className="relative"
                             >
                                 {/* Premium Frame */}
-                                <div className="absolute -inset-1.5 bg-gradient-to-br from-[#FFD700] via-[#6C5CE7] to-[#FF6B6B] rounded-[2rem] opacity-90" />
+                                <div className="absolute -inset-1.5 bg-gradient-to-br from-[#84E2C2] via-[#9EE9D1] to-[#B8F1E1] rounded-[2rem] opacity-90" />
                                 <div className="absolute inset-0 bg-white rounded-[1.8rem] m-1.5" />
 
                                 <div className="relative rounded-[1.5rem] overflow-hidden m-3 shadow-2xl">
@@ -222,10 +222,10 @@ export default function Services() {
                                 </div>
 
                                 {/* Corner Decorations */}
-                                <div className="absolute top-3 left-3 w-8 h-8 border-l-4 border-t-4 border-[#FFD700]/70 rounded-tl-xl" />
-                                <div className="absolute top-3 right-3 w-8 h-8 border-r-4 border-t-4 border-[#FFD700]/70 rounded-tr-xl" />
-                                <div className="absolute bottom-3 left-3 w-8 h-8 border-l-4 border-b-4 border-[#FFD700]/70 rounded-bl-xl" />
-                                <div className="absolute bottom-3 right-3 w-8 h-8 border-r-4 border-b-4 border-[#FFD700]/70 rounded-br-xl" />
+                                <div className="absolute top-3 left-3 w-8 h-8 border-l-4 border-t-4 border-[#84E2C2]/70 rounded-tl-xl" />
+                                <div className="absolute top-3 right-3 w-8 h-8 border-r-4 border-t-4 border-[#84E2C2]/70 rounded-tr-xl" />
+                                <div className="absolute bottom-3 left-3 w-8 h-8 border-l-4 border-b-4 border-[#84E2C2]/70 rounded-bl-xl" />
+                                <div className="absolute bottom-3 right-3 w-8 h-8 border-r-4 border-b-4 border-[#84E2C2]/70 rounded-br-xl" />
                             </motion.div>
                         </div>
                     </div>
@@ -239,7 +239,7 @@ export default function Services() {
                     transition={{ duration: 0.5, delay: 0.4 }}
                     className="text-center mt-16"
                 >
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-[#4A6D6D] mb-4">
                         Not sure which service is right for you?
                     </p>
                     <motion.a
