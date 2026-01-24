@@ -73,10 +73,10 @@ export default function Biography() {
                         transition={{ duration: 0.7 }}
                         className="relative"
                     >
-                        <div className="relative max-w-md mx-auto lg:mx-0">
+                        <div className="relative max-w-[320px] sm:max-w-md mx-auto lg:mx-0">
                             {/* Outer Glow */}
                             <div
-                                className="absolute -inset-6 rounded-[2.5rem] blur-2xl opacity-60"
+                                className="absolute -inset-4 sm:-inset-6 rounded-[2.5rem] blur-2xl opacity-60"
                                 style={{
                                     background: "linear-gradient(135deg, rgba(132, 226, 194, 0.5), rgba(184, 241, 225, 0.4), rgba(158, 233, 209, 0.5))",
                                 }}
@@ -90,17 +90,17 @@ export default function Biography() {
                             >
                                 {/* Gradient Border */}
                                 <div
-                                    className="absolute -inset-1.5 rounded-[2rem] opacity-90"
+                                    className="absolute -inset-1 rounded-[2rem] sm:-inset-1.5 opacity-90"
                                     style={{
                                         background: "linear-gradient(135deg, #84E2C2, #9EE9D1, #B8F1E1, #84E2C2)",
                                         backgroundSize: "300% 300%",
                                         animation: "gradient-shift 4s ease infinite",
                                     }}
                                 />
-                                <div className="absolute inset-0 bg-white rounded-[1.8rem] m-1.5" />
+                                <div className="absolute inset-0 bg-white rounded-[1.8rem] m-1 sm:m-1.5" />
 
                                 {/* Image Container */}
-                                <div className="relative rounded-[1.5rem] overflow-hidden m-3 shadow-2xl">
+                                <div className="relative rounded-[1.5rem] overflow-hidden m-2 sm:m-3 shadow-2xl">
                                     <div className="aspect-[3/4] relative">
                                         <Image
                                             src="/images/karina-bio.jpg"
@@ -120,39 +120,32 @@ export default function Biography() {
 
                                 {/* Corner Decorations */}
                                 <div
-                                    className="absolute top-3 left-3 w-10 h-10 border-l-4 border-t-4 rounded-tl-xl"
+                                    className="absolute top-2 left-2 sm:top-3 sm:left-3 w-8 h-8 sm:w-10 sm:h-10 border-l-4 border-t-4 rounded-tl-xl"
                                     style={{ borderColor: "rgba(132, 226, 194, 0.7)" }}
                                 />
                                 <div
-                                    className="absolute top-3 right-3 w-10 h-10 border-r-4 border-t-4 rounded-tr-xl"
-                                    style={{ borderColor: "rgba(132, 226, 194, 0.7)" }}
-                                />
-                                <div
-                                    className="absolute bottom-3 left-3 w-10 h-10 border-l-4 border-b-4 rounded-bl-xl"
-                                    style={{ borderColor: "rgba(132, 226, 194, 0.7)" }}
-                                />
-                                <div
-                                    className="absolute bottom-3 right-3 w-10 h-10 border-r-4 border-b-4 rounded-br-xl"
+                                    className="absolute top-2 right-2 sm:top-3 sm:right-3 w-8 h-8 sm:w-10 sm:h-10 border-r-4 border-t-4 rounded-tr-xl"
                                     style={{ borderColor: "rgba(132, 226, 194, 0.7)" }}
                                 />
                             </motion.div>
 
-                            {/* Floating Badge */}
+                            {/* Floating Badge - Optimized for Mobile */}
                             <motion.div
                                 animate={{ y: [0, -10, 0], rotate: [-2, 2, -2] }}
                                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                                className="absolute -bottom-4 -right-4 bg-white rounded-2xl shadow-xl p-4"
+                                className="absolute -bottom-2 -right-2 sm:-bottom-4 sm:-right-4 bg-white rounded-2xl shadow-xl p-3 sm:p-4 z-20"
                             >
-                                <div className="flex items-center gap-3">
+                                <div className="flex items-center gap-2 sm:gap-3">
                                     <div
-                                        className="w-12 h-12 rounded-full flex items-center justify-center"
+                                        className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center shrink-0"
                                         style={{ backgroundColor: "rgba(132, 226, 194, 0.2)" }}
                                     >
-                                        <Heart size={24} style={{ color: "#2D9A78" }} />
+                                        <Heart size={20} className="sm:hidden" style={{ color: "#2D9A78" }} />
+                                        <Heart size={24} className="hidden sm:block" style={{ color: "#2D9A78" }} />
                                     </div>
                                     <div>
-                                        <p className="font-bold" style={{ color: "#1A3A3A" }}>Dedicated Care</p>
-                                        <p className="text-xs" style={{ color: "#4A6D6D" }}>Trusted by Families</p>
+                                        <p className="font-bold text-xs sm:text-base" style={{ color: "#1A3A3A" }}>Dedicated Care</p>
+                                        <p className="text-[10px] sm:text-xs" style={{ color: "#4A6D6D" }}>Trusted by Families</p>
                                     </div>
                                 </div>
                             </motion.div>

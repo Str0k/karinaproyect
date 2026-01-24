@@ -47,8 +47,8 @@ export default function Hero() {
                 />
             </div>
 
-            <div className="container-custom relative z-10 pt-32 sm:pt-28 lg:pt-24 pb-16 hero-mobile-wrap">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="container-custom relative z-10 pt-28 sm:pt-32 lg:pt-24 pb-12 hero-mobile-wrap">
+                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                     {/* Content */}
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
@@ -56,42 +56,24 @@ export default function Hero() {
                         transition={{ duration: 0.6 }}
                         className="text-center lg:text-left order-2 lg:order-1"
                     >
-                        {/* Mobile Spotlight */}
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.15 }}
-                            className="relative mx-auto mb-8 w-full max-w-md lg:hidden"
-                        >
-                            <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-[#1F5A52]/20 via-[#86CDB7]/20 to-[#C9A55C]/20 blur-2xl" />
-                            <div className="relative rounded-[2rem] border border-white/40 bg-white/70 px-6 py-5 shadow-xl backdrop-blur">
-                                <p className="text-xs uppercase tracking-[0.35em] text-[#1F5A52] font-semibold">
-                                    Premium childcare
-                                </p>
-                                <p className="mt-2 text-sm text-[#5A6F6B]">
-                                    Peace of mind for your events
-                                </p>
-                            </div>
-                        </motion.div>
-
                         {/* Rating Badge */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2 }}
-                            className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-md mb-6"
+                            className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm mb-6 border border-white/50"
                         >
                             <div className="flex">
                                 {[...Array(5)].map((_, i) => (
                                     <Star
                                         key={i}
-                                        size={16}
+                                        size={14}
                                         className="text-yellow-400 fill-yellow-400"
                                     />
                                 ))}
                             </div>
-                            <span className="text-sm font-semibold text-[#2C3E50]">
-                                5.0 Rating • Trusted by 50+ Families
+                            <span className="text-xs sm:text-sm font-bold text-[#1F5A52]">
+                                5.0 Rating • 50+ Families
                             </span>
                         </motion.div>
 
@@ -100,7 +82,7 @@ export default function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.3 }}
-                            className="hero-title text-4xl md:text-5xl lg:text-6xl font-bold text-[#2C3E50] mb-6 leading-tight"
+                            className="hero-title font-bold text-[#1A3A3A] mb-6 leading-[1.1]"
                         >
                             Trusted Childcare for Your{" "}
                             <span className="hero-title-accent">Special Events</span>
@@ -111,18 +93,15 @@ export default function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.4 }}
-                            className="text-lg md:text-xl text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0"
+                            className="text-base sm:text-lg lg:text-xl text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed"
                         >
                             Serving{" "}
-                            <span className="relative inline-flex items-center">
-                                <span className="absolute -inset-x-2 -inset-y-1 rounded-full bg-gradient-to-r from-[#C9A55C]/30 via-[#86CDB7]/25 to-transparent" />
-                                <span className="relative font-semibold text-[#1F5A52]">Kansas City</span>
+                            <span className="relative inline-flex items-center font-bold text-[#1F5A52]">
+                                Kansas City
                             </span>{" "}
-                            and surrounding areas.
-                            Experienced childcare provider specializing in both in-home and
-                            event childcare. Perfect for birthdays, parties, and special
-                            events, providing parents peace of mind while creating a fun, safe
-                            and comfortable environment for children.
+                            and surroundings.
+                            Experienced provider specializing in event and in-home care.
+                            Creating safe, fun, and comfortable environments for your little ones.
                         </motion.p>
 
                         {/* CTAs */}
@@ -130,45 +109,41 @@ export default function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.5 }}
-                            className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10"
+                            className="flex flex-col xs:flex-row gap-4 justify-center lg:justify-start mb-10 px-4 xs:px-0"
                         >
                             <motion.button
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
+                                whileHover={{ scale: 1.02 }}
+                                whileTap={{ scale: 0.98 }}
                                 onClick={() => scrollToSection("#contact")}
-                                className="btn-primary text-lg py-4 px-8"
+                                className="btn-primary"
                             >
-                                <Calendar size={20} />
-                                Book a Consultation
-                                <ChevronRight size={20} />
+                                <Calendar size={18} />
+                                Book Consultation
                             </motion.button>
                             <motion.button
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
+                                whileHover={{ scale: 1.02 }}
+                                whileTap={{ scale: 0.98 }}
                                 onClick={() => scrollToSection("#services")}
-                                className="btn-secondary text-lg py-4 px-8"
+                                className="btn-secondary"
                             >
                                 View Services
                             </motion.button>
                         </motion.div>
 
-                        {/* Trust Badges */}
+                        {/* Trust Badges - Simplified for Mobile */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.6 }}
-                            className="grid grid-cols-2 md:grid-cols-4 gap-4"
+                            className="grid grid-cols-2 gap-3"
                         >
                             {trustBadges.map((badge, index) => (
                                 <motion.div
                                     key={index}
-                                    initial={{ opacity: 0, scale: 0.8 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    transition={{ delay: 0.7 + index * 0.1 }}
-                                    className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-3 py-2 rounded-lg shadow-sm"
+                                    className="flex items-center gap-2 bg-white/40 backdrop-blur-sm px-3 py-2 rounded-xl border border-white/20"
                                 >
-                                    <badge.icon size={20} className="text-[#2D9A78] shrink-0" />
-                                    <span className="text-xs font-medium text-[#2C3E50]">
+                                    <badge.icon size={16} className="text-[#2D9A78] shrink-0" />
+                                    <span className="text-[10px] sm:text-xs font-bold text-[#1F5A52]">
                                         {badge.text}
                                     </span>
                                 </motion.div>
@@ -178,7 +153,7 @@ export default function Hero() {
 
                     {/* Hero Image/Illustration - Mobile */}
                     <motion.div
-                        initial={{ opacity: 0, y: 30 }}
+                        initial={{ opacity: 0, y: 0 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.3 }}
                         className="hero-mobile-media relative lg:hidden mb-10 order-1 mt-6"
