@@ -144,7 +144,7 @@ p {
   background: linear-gradient(135deg, #2D9A78, #84E2C2);
   color: white;
   padding: 1rem 2rem;
-  border-radius: 0.75rem;
+  border-radius: 1rem;
   font-weight: 600;
   font-size: 1rem;
   border: none;
@@ -167,7 +167,7 @@ p {
   background: transparent;
   color: #2D9A78;
   padding: 1rem 2rem;
-  border-radius: 0.75rem;
+  border-radius: 1rem;
   font-weight: 600;
   font-size: 1rem;
   border: 2px solid #84E2C2;
@@ -191,7 +191,7 @@ p {
 
 .card {
   background: white;
-  border-radius: 1.25rem;
+  border-radius: 1.5rem;
   padding: 2rem;
   box-shadow: 0 4px 20px rgba(132, 226, 194, 0.15);
   transition: all var(--transition-base);
@@ -327,7 +327,7 @@ p {
   width: 100%;
   padding: 1rem 1.25rem;
   border: 2px solid #E5E7EB;
-  border-radius: 0.75rem;
+  border-radius: 1rem;
   font-size: 1rem;
   transition: all var(--transition-fast);
   background: white;

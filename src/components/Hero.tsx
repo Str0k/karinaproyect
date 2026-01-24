@@ -176,7 +176,7 @@ export default function Hero() {
                                 <div className="relative rounded-[1.5rem] overflow-hidden m-2 shadow-2xl">
                                     <div className="aspect-[4/3] relative">
                                         <img
-                                            src="/images/hero.png"
+                                            src="/images/hero-care.png"
                                             alt="Professional childcare services"
                                             className="w-full h-full object-cover"
                                         />
@@ -217,7 +217,7 @@ export default function Hero() {
                                 <div className="relative rounded-[2rem] overflow-hidden m-3 shadow-2xl">
                                     <div className="aspect-[4/3] relative">
                                         <img
-                                            src="/images/hero.png"
+                                            src="/images/hero-care.png"
                                             alt="Professional childcare services"
                                             className="w-full h-full object-cover"
                                         />
