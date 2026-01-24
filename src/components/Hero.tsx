@@ -61,14 +61,14 @@ export default function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2 }}
-                            className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm mb-6 border border-white/50"
+                            className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-sm px-4 sm:px-5 py-2.5 sm:py-3 rounded-full shadow-sm mb-6 border border-white/50"
                         >
-                            <div className="flex">
+                            <div className="flex gap-0.5">
                                 {[...Array(5)].map((_, i) => (
                                     <Star
                                         key={i}
-                                        size={14}
-                                        className="text-yellow-400 fill-yellow-400"
+                                        size={16}
+                                        className="text-yellow-400 fill-yellow-400 sm:w-5 sm:h-5"
                                     />
                                 ))}
                             </div>

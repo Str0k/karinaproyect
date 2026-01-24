@@ -47,7 +47,7 @@ const ageGroups = [
         ],
         approach:
             "Fun, interactive care that balances learning, creativity, and active play.",
-        color: "#1E7A5E",
+        color: "#BF5084",
         bgColor: "#F2A0CD",
     },
 ];
