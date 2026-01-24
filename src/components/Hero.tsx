@@ -56,12 +56,12 @@ export default function Hero() {
                         transition={{ duration: 0.6 }}
                         className="text-center lg:text-left order-2 lg:order-1"
                     >
-                        {/* Rating Badge */}
+                        {/* Rating Badge - Mobile only */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2 }}
-                            className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-sm px-4 sm:px-5 py-2.5 sm:py-3 rounded-full shadow-sm mb-6 border border-white/50"
+                            className="lg:hidden inline-flex items-center gap-3 bg-white/80 backdrop-blur-sm px-4 sm:px-5 py-2.5 sm:py-3 rounded-full shadow-sm mb-6 border border-white/50"
                         >
                             <div className="flex gap-0.5">
                                 {[...Array(5)].map((_, i) => (
@@ -93,7 +93,7 @@ export default function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.4 }}
-                            className="text-base sm:text-lg lg:text-xl text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed"
+                            className="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 max-w-xl mx-auto lg:mx-0 leading-relaxed"
                         >
                             Serving{" "}
                             <span className="relative inline-flex items-center font-bold text-[#BF5084]">
@@ -103,6 +103,27 @@ export default function Hero() {
                             Experienced provider specializing in event and in-home care.
                             Creating safe, fun, and comfortable environments for your little ones.
                         </motion.p>
+
+                        {/* Rating Badge - Desktop only */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.45 }}
+                            className="hidden lg:inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm px-5 py-3 rounded-full shadow-md mb-8 border border-[#F2A0CD]/30"
+                        >
+                            <div className="flex gap-1">
+                                {[...Array(5)].map((_, i) => (
+                                    <Star
+                                        key={i}
+                                        size={20}
+                                        className="text-yellow-400 fill-yellow-400"
+                                    />
+                                ))}
+                            </div>
+                            <span className="text-sm font-bold text-[#BF5084]">
+                                5.0 Rating • Trusted by 50+ Families
+                            </span>
+                        </motion.div>
 
                         {/* CTAs */}
                         <motion.div
