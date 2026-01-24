@@ -50,19 +50,19 @@ export default function WhyTrust() {
     const decorScale = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1.1, 0.8]);
 
     return (
-        <section id="why-trust" ref={sectionRef} className="section-padding relative overflow-hidden" style={{ background: "linear-gradient(180deg, #F5FAFA 0%, #D1F8F0 50%, #EBFFFF 100%)" }}>
+        <section id="why-trust" ref={sectionRef} className="section-padding relative overflow-hidden" style={{ background: "linear-gradient(180deg, #FDF0F6 0%, #FDF0F6 50%, #FFF8FB 100%)" }}>
             {/* Parallax Decorative Elements */}
             <motion.div
                 style={{ y: decorY1, scale: decorScale }}
-                className="absolute top-10 right-10 w-32 h-32 bg-gradient-to-br from-[#84E2C2]/30 to-[#B8F1E1]/20 rounded-full blur-2xl pointer-events-none"
+                className="absolute top-10 right-10 w-32 h-32 bg-gradient-to-br from-[#F279BC]/30 to-[#F2A0CD]/20 rounded-full blur-2xl pointer-events-none"
             />
             <motion.div
                 style={{ y: decorY2 }}
-                className="absolute bottom-20 left-10 w-48 h-48 bg-gradient-to-br from-[#9EE9D1]/25 to-[#D1F8F0]/20 rounded-full blur-3xl pointer-events-none"
+                className="absolute bottom-20 left-10 w-48 h-48 bg-gradient-to-br from-[#F291C7]/25 to-[#FDF0F6]/20 rounded-full blur-3xl pointer-events-none"
             />
             <motion.div
                 style={{ y: useTransform(scrollYProgress, [0, 1], [50, -50]) }}
-                className="absolute top-1/3 right-1/4 w-24 h-24 bg-[#84E2C2]/15 rounded-full blur-xl pointer-events-none"
+                className="absolute top-1/3 right-1/4 w-24 h-24 bg-[#F279BC]/15 rounded-full blur-xl pointer-events-none"
             />
 
             <div className="container-custom relative z-10">
@@ -74,13 +74,13 @@ export default function WhyTrust() {
                     transition={{ duration: 0.5 }}
                     className="text-center max-w-3xl mx-auto mb-16"
                 >
-                    <span className="inline-block px-4 py-2 bg-[#84E2C2]/20 text-[#2D9A78] font-semibold rounded-full text-sm mb-4">
+                    <span className="inline-block px-4 py-2 bg-[#F279BC]/20 text-[#D962A3] font-semibold rounded-full text-sm mb-4">
                         Why Choose Me
                     </span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#1A3A3A] mb-4">
-                        Why Parents <span className="text-[#2D9A78]">Trust Me</span>
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#3D1F2E] mb-4">
+                        Why Parents <span className="text-[#D962A3]">Trust Me</span>
                     </h2>
-                    <p className="text-[#4A6D6D] text-lg">
+                    <p className="text-[#7A4A5E] text-lg">
                         Every child deserves attentive, loving care. Here&apos;s what sets my
                         childcare services apart.
                     </p>
@@ -101,15 +101,15 @@ export default function WhyTrust() {
                                 whileHover={{ scale: 1.1, rotate: 5 }}
                                 transition={{ type: "spring", stiffness: 300 }}
                                 className="w-20 h-20 mx-auto mb-4 bg-white rounded-2xl shadow-md flex items-center justify-center group"
-                                style={{ boxShadow: "0 4px 20px rgba(132, 226, 194, 0.3)" }}
+                                style={{ boxShadow: "0 4px 20px rgba(242, 121, 188, 0.3)" }}
                             >
                                 <feature.icon
                                     size={36}
-                                    className="text-[#2D9A78] group-hover:scale-110 transition-transform"
+                                    className="text-[#D962A3] group-hover:scale-110 transition-transform"
                                 />
                             </motion.div>
-                            <h3 className="font-bold text-[#1A3A3A] mb-2">{feature.title}</h3>
-                            <p className="text-sm text-[#4A6D6D]">{feature.description}</p>
+                            <h3 className="font-bold text-[#3D1F2E] mb-2">{feature.title}</h3>
+                            <p className="text-sm text-[#7A4A5E]">{feature.description}</p>
                         </motion.div>
                     ))}
                 </div>
@@ -121,7 +121,7 @@ export default function WhyTrust() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.5 }}
                     className="mt-16 bg-white rounded-3xl p-8 md:p-12 shadow-lg"
-                    style={{ boxShadow: "0 10px 40px rgba(132, 226, 194, 0.2)" }}
+                    style={{ boxShadow: "0 10px 40px rgba(242, 121, 188, 0.2)" }}
                 >
                     <div className="grid md:grid-cols-3 gap-8 text-center">
                         <div>
@@ -130,11 +130,11 @@ export default function WhyTrust() {
                                 whileInView={{ scale: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ type: "spring", delay: 0.6 }}
-                                className="text-5xl font-bold text-[#2D9A78] mb-2"
+                                className="text-5xl font-bold text-[#D962A3] mb-2"
                             >
                                 5+
                             </motion.div>
-                            <p className="text-[#4A6D6D] font-medium">Years of Experience</p>
+                            <p className="text-[#7A4A5E] font-medium">Years of Experience</p>
                         </div>
                         <div>
                             <motion.div
@@ -142,11 +142,11 @@ export default function WhyTrust() {
                                 whileInView={{ scale: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ type: "spring", delay: 0.7 }}
-                                className="text-5xl font-bold text-[#84E2C2] mb-2"
+                                className="text-5xl font-bold text-[#F279BC] mb-2"
                             >
                                 50+
                             </motion.div>
-                            <p className="text-[#4A6D6D] font-medium">Happy Families</p>
+                            <p className="text-[#7A4A5E] font-medium">Happy Families</p>
                         </div>
                         <div>
                             <motion.div
@@ -154,11 +154,11 @@ export default function WhyTrust() {
                                 whileInView={{ scale: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ type: "spring", delay: 0.8 }}
-                                className="text-5xl font-bold text-[#9EE9D1] mb-2"
+                                className="text-5xl font-bold text-[#F291C7] mb-2"
                             >
                                 100+
                             </motion.div>
-                            <p className="text-[#4A6D6D] font-medium">Events Covered</p>
+                            <p className="text-[#7A4A5E] font-medium">Events Covered</p>
                         </div>
                     </div>
                 </motion.div>
@@ -175,7 +175,7 @@ export default function WhyTrust() {
                         {/* Image with Premium Frame */}
                         <div className="relative">
                             {/* Outer Glow */}
-                            <div className="absolute -inset-6 bg-gradient-to-br from-[#84E2C2]/30 via-[#D1F8F0]/20 to-[#9EE9D1]/30 rounded-[3rem] blur-2xl opacity-60" />
+                            <div className="absolute -inset-6 bg-gradient-to-br from-[#F279BC]/30 via-[#FDF0F6]/20 to-[#F291C7]/30 rounded-[3rem] blur-2xl opacity-60" />
 
                             <motion.div
                                 whileHover={{ scale: 1.02, rotate: 1 }}
@@ -183,7 +183,7 @@ export default function WhyTrust() {
                                 className="relative"
                             >
                                 {/* Premium Frame */}
-                                <div className="absolute -inset-1.5 bg-gradient-to-br from-[#84E2C2] via-[#9EE9D1] to-[#B8F1E1] rounded-[2rem] opacity-90" />
+                                <div className="absolute -inset-1.5 bg-gradient-to-br from-[#F279BC] via-[#F291C7] to-[#F2A0CD] rounded-[2rem] opacity-90" />
                                 <div className="absolute inset-0 bg-white rounded-[1.8rem] m-1.5" />
 
                                 <div className="relative rounded-[1.5rem] overflow-hidden m-3 shadow-2xl">
@@ -198,10 +198,10 @@ export default function WhyTrust() {
                                 </div>
 
                                 {/* Corner Decorations */}
-                                <div className="absolute top-3 left-3 w-8 h-8 border-l-4 border-t-4 border-[#84E2C2]/70 rounded-tl-xl" />
-                                <div className="absolute top-3 right-3 w-8 h-8 border-r-4 border-t-4 border-[#84E2C2]/70 rounded-tr-xl" />
-                                <div className="absolute bottom-3 left-3 w-8 h-8 border-l-4 border-b-4 border-[#84E2C2]/70 rounded-bl-xl" />
-                                <div className="absolute bottom-3 right-3 w-8 h-8 border-r-4 border-b-4 border-[#84E2C2]/70 rounded-br-xl" />
+                                <div className="absolute top-3 left-3 w-8 h-8 border-l-4 border-t-4 border-[#F279BC]/70 rounded-tl-xl" />
+                                <div className="absolute top-3 right-3 w-8 h-8 border-r-4 border-t-4 border-[#F279BC]/70 rounded-tr-xl" />
+                                <div className="absolute bottom-3 left-3 w-8 h-8 border-l-4 border-b-4 border-[#F279BC]/70 rounded-bl-xl" />
+                                <div className="absolute bottom-3 right-3 w-8 h-8 border-r-4 border-b-4 border-[#F279BC]/70 rounded-br-xl" />
                             </motion.div>
                         </div>
 
@@ -212,7 +212,7 @@ export default function WhyTrust() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.2 }}
-                                className="inline-block px-4 py-2 bg-[#84E2C2]/20 text-[#2D9A78] font-semibold rounded-full text-sm mb-4"
+                                className="inline-block px-4 py-2 bg-[#F279BC]/20 text-[#D962A3] font-semibold rounded-full text-sm mb-4"
                             >
                                 Creating Moments
                             </motion.span>
@@ -221,17 +221,17 @@ export default function WhyTrust() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.3 }}
-                                className="text-2xl md:text-3xl font-bold text-[#1A3A3A] mb-4"
+                                className="text-2xl md:text-3xl font-bold text-[#3D1F2E] mb-4"
                             >
                                 Learning Through{" "}
-                                <span className="text-[#2D9A78]">Stories & Play</span>
+                                <span className="text-[#D962A3]">Stories & Play</span>
                             </motion.h3>
                             <motion.p
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.4 }}
-                                className="text-[#4A6D6D] text-lg leading-relaxed mb-6"
+                                className="text-[#7A4A5E] text-lg leading-relaxed mb-6"
                             >
                                 Every child deserves quality time filled with imagination and wonder.
                                 From reading adventures to creative play, I create meaningful experiences
@@ -244,13 +244,13 @@ export default function WhyTrust() {
                                 transition={{ delay: 0.5 }}
                                 className="flex flex-wrap gap-3 justify-center lg:justify-start"
                             >
-                                <span className="px-4 py-2 bg-white rounded-full shadow-md text-sm font-medium text-[#1A3A3A]" style={{ boxShadow: "0 2px 10px rgba(132, 226, 194, 0.3)" }}>
+                                <span className="px-4 py-2 bg-white rounded-full shadow-md text-sm font-medium text-[#3D1F2E]" style={{ boxShadow: "0 2px 10px rgba(242, 121, 188, 0.3)" }}>
                                     📚 Storytime
                                 </span>
-                                <span className="px-4 py-2 bg-white rounded-full shadow-md text-sm font-medium text-[#1A3A3A]" style={{ boxShadow: "0 2px 10px rgba(132, 226, 194, 0.3)" }}>
+                                <span className="px-4 py-2 bg-white rounded-full shadow-md text-sm font-medium text-[#3D1F2E]" style={{ boxShadow: "0 2px 10px rgba(242, 121, 188, 0.3)" }}>
                                     🎨 Creative Arts
                                 </span>
-                                <span className="px-4 py-2 bg-white rounded-full shadow-md text-sm font-medium text-[#1A3A3A]" style={{ boxShadow: "0 2px 10px rgba(132, 226, 194, 0.3)" }}>
+                                <span className="px-4 py-2 bg-white rounded-full shadow-md text-sm font-medium text-[#3D1F2E]" style={{ boxShadow: "0 2px 10px rgba(242, 121, 188, 0.3)" }}>
                                     🎵 Music & Songs
                                 </span>
                             </motion.div>

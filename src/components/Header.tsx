@@ -46,9 +46,9 @@ export default function Header() {
                     {/* Logo */}
                     <a
                         href="#"
-                        className="text-2xl font-bold text-[#1A3A3A] hover:text-[#2D9A78] transition-colors"
+                        className="text-2xl font-bold text-[#3D1F2E] hover:text-[#D962A3] transition-colors"
                     >
-                        <span className="text-[#2D9A78]">CareBy</span>KG
+                        <span className="text-[#D962A3]">CareBy</span>KG
                     </a>
 
                     {/* Desktop Navigation */}
@@ -57,7 +57,7 @@ export default function Header() {
                             <button
                                 key={link.name}
                                 onClick={() => scrollToSection(link.href)}
-                                className="text-[#1A3A3A] hover:text-[#2D9A78] font-medium transition-colors"
+                                className="text-[#3D1F2E] hover:text-[#D962A3] font-medium transition-colors"
                             >
                                 {link.name}
                             </button>
@@ -68,7 +68,7 @@ export default function Header() {
                     <div className="hidden md:flex items-center gap-4">
                         <a
                             href="tel:+19132069322"
-                            className="flex items-center gap-2 text-[#1A3A3A] hover:text-[#2D9A78] transition-colors"
+                            className="flex items-center gap-2 text-[#3D1F2E] hover:text-[#D962A3] transition-colors"
                         >
                             <Phone size={18} />
                             <span className="font-medium">(913) 206-9322</span>
@@ -87,7 +87,7 @@ export default function Header() {
                     {/* Mobile Menu Button */}
                     <button
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        className="md:hidden p-2 text-[#2C3E50]"
+                        className="md:hidden p-2 text-[#5C2D42]"
                         aria-label="Toggle menu"
                     >
                         {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -119,9 +119,9 @@ export default function Header() {
                         <a
                             href="#"
                             onClick={() => setIsMobileMenuOpen(false)}
-                            className="text-2xl font-bold text-[#1A3A3A]"
+                            className="text-2xl font-bold text-[#3D1F2E]"
                         >
-                            <span className="text-[#2D9A78]">CareBy</span>KG
+                            <span className="text-[#D962A3]">CareBy</span>KG
                         </a>
                         <p className="text-sm text-gray-500 mt-2">Professional Childcare</p>
                     </div>
@@ -134,10 +134,10 @@ export default function Header() {
                                 animate={{ opacity: isMobileMenuOpen ? 1 : 0, x: isMobileMenuOpen ? 0 : 20 }}
                                 transition={{ delay: 0.1 + index * 0.1 }}
                                 onClick={() => scrollToSection(link.href)}
-                                className="text-left text-xl font-semibold text-[#1A3A3A] hover:text-[#2D9A78] py-4 border-b border-gray-50/50 transition-all flex items-center justify-between group"
+                                className="text-left text-xl font-semibold text-[#3D1F2E] hover:text-[#D962A3] py-4 border-b border-gray-50/50 transition-all flex items-center justify-between group"
                             >
                                 {link.name}
-                                <ChevronRight size={18} className="text-gray-300 group-hover:text-[#2D9A78] transition-colors" />
+                                <ChevronRight size={18} className="text-gray-300 group-hover:text-[#D962A3] transition-colors" />
                             </motion.button>
                         ))}
                     </nav>
@@ -146,13 +146,13 @@ export default function Header() {
                         <div className="flex flex-col gap-4">
                             <a
                                 href="tel:+19132069322"
-                                className="flex items-center gap-4 text-[#1A3A3A] font-bold p-4 rounded-2xl bg-[#84E2C2]/10 border border-[#84E2C2]/20 shadow-sm"
+                                className="flex items-center gap-4 text-[#3D1F2E] font-bold p-4 rounded-2xl bg-[#F279BC]/10 border border-[#F279BC]/20 shadow-sm"
                             >
                                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm">
-                                    <Phone size={20} className="text-[#2D9A78]" />
+                                    <Phone size={20} className="text-[#D962A3]" />
                                 </div>
                                 <div className="flex flex-col">
-                                    <span className="text-xs text-[#2D9A78] uppercase tracking-wider font-bold">Call Now</span>
+                                    <span className="text-xs text-[#D962A3] uppercase tracking-wider font-bold">Call Now</span>
                                     <span>(913) 206-9322</span>
                                 </div>
                             </a>
@@ -160,7 +160,7 @@ export default function Header() {
                             <motion.button
                                 whileTap={{ scale: 0.95 }}
                                 onClick={() => scrollToSection("#contact")}
-                                className="w-full py-4 bg-gradient-to-r from-[#1A3A3A] to-[#2D5A5A] text-white font-bold rounded-2xl shadow-xl shadow-[#1A3A3A]/10"
+                                className="w-full py-4 bg-gradient-to-r from-[#BF5084] to-[#D962A3] text-white font-bold rounded-2xl shadow-xl shadow-[#BF5084]/10"
                             >
                                 Book a Consultation
                             </motion.button>

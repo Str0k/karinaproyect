@@ -38,12 +38,12 @@ export default function Hero() {
                 <motion.div
                     animate={{ y: [0, 20, 0], rotate: [0, -5, 0] }}
                     transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-                    className="absolute bottom-40 left-10 w-32 h-32 bg-[#84E2C2]/20 rounded-full blur-xl"
+                    className="absolute bottom-40 left-10 w-32 h-32 bg-[#F279BC]/20 rounded-full blur-xl"
                 />
                 <motion.div
                     animate={{ scale: [1, 1.1, 1] }}
                     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                    className="absolute top-1/2 right-1/4 w-16 h-16 bg-[#9EE9D1]/20 rounded-full blur-lg"
+                    className="absolute top-1/2 right-1/4 w-16 h-16 bg-[#F2A0CD]/20 rounded-full blur-lg"
                 />
             </div>
 
@@ -72,7 +72,7 @@ export default function Hero() {
                                     />
                                 ))}
                             </div>
-                            <span className="text-xs sm:text-sm font-bold text-[#1F5A52]">
+                            <span className="text-xs sm:text-sm font-bold text-[#BF5084]">
                                 5.0 Rating • 50+ Families
                             </span>
                         </motion.div>
@@ -82,7 +82,7 @@ export default function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.3 }}
-                            className="hero-title font-bold text-[#1A3A3A] mb-6 leading-[1.1]"
+                            className="hero-title font-bold text-[#3D1F2E] mb-6 leading-[1.1]"
                         >
                             Trusted Childcare for Your{" "}
                             <span className="hero-title-accent">Special Events</span>
@@ -96,7 +96,7 @@ export default function Hero() {
                             className="text-base sm:text-lg lg:text-xl text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed"
                         >
                             Serving{" "}
-                            <span className="relative inline-flex items-center font-bold text-[#1F5A52]">
+                            <span className="relative inline-flex items-center font-bold text-[#BF5084]">
                                 Kansas City
                             </span>{" "}
                             and surroundings.
@@ -142,8 +142,8 @@ export default function Hero() {
                                     key={index}
                                     className="flex items-center gap-2 bg-white/40 backdrop-blur-sm px-3 py-2 rounded-xl border border-white/20"
                                 >
-                                    <badge.icon size={16} className="text-[#2D9A78] shrink-0" />
-                                    <span className="text-[10px] sm:text-xs font-bold text-[#1F5A52]">
+                                    <badge.icon size={16} className="text-[#D962A3] shrink-0" />
+                                    <span className="text-[10px] sm:text-xs font-bold text-[#5C2D42]">
                                         {badge.text}
                                     </span>
                                 </motion.div>
@@ -163,7 +163,7 @@ export default function Hero() {
                             <motion.div
                                 animate={{ opacity: [0.5, 0.8, 0.5] }}
                                 transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
-                                className="absolute -inset-6 bg-gradient-to-br from-[#1F5A52]/30 via-[#86CDB7]/20 to-[#C9A55C]/30 rounded-[2.8rem] blur-2xl"
+                                className="absolute -inset-6 bg-gradient-to-br from-[#BF5084]/30 via-[#D962A3]/20 to-[#F279BC]/30 rounded-[2.8rem] blur-2xl"
                             />
 
                             <motion.div
@@ -172,7 +172,7 @@ export default function Hero() {
                                 className="relative"
                             >
                                 {/* Premium Frame */}
-                                <div className="absolute -inset-1 bg-gradient-to-br from-[#84E2C2] via-[#9EE9D1] to-[#B8F1E1] rounded-[2rem] opacity-80" />
+                                <div className="absolute -inset-1 bg-gradient-to-br from-[#BF5084] via-[#D962A3] to-[#F279BC] rounded-[2rem] opacity-80" />
                                 <div className="absolute inset-0 bg-white rounded-[1.8rem] m-1" />
 
                                 <div className="relative rounded-[1.5rem] overflow-hidden m-2 shadow-2xl">
@@ -187,10 +187,10 @@ export default function Hero() {
                                 </div>
 
                                 {/* Corner Decorations */}
-                                <div className="absolute top-2 left-2 w-6 h-6 border-l-3 border-t-3 border-[#84E2C2]/60 rounded-tl-lg" />
-                                <div className="absolute top-2 right-2 w-6 h-6 border-r-3 border-t-3 border-[#84E2C2]/60 rounded-tr-lg" />
-                                <div className="absolute bottom-2 left-2 w-6 h-6 border-l-3 border-b-3 border-[#84E2C2]/60 rounded-bl-lg" />
-                                <div className="absolute bottom-2 right-2 w-6 h-6 border-r-3 border-b-3 border-[#84E2C2]/60 rounded-br-lg" />
+                                <div className="absolute top-2 left-2 w-6 h-6 border-l-3 border-t-3 border-[#F279BC]/60 rounded-tl-lg" />
+                                <div className="absolute top-2 right-2 w-6 h-6 border-r-3 border-t-3 border-[#F279BC]/60 rounded-tr-lg" />
+                                <div className="absolute bottom-2 left-2 w-6 h-6 border-l-3 border-b-3 border-[#F279BC]/60 rounded-bl-lg" />
+                                <div className="absolute bottom-2 right-2 w-6 h-6 border-r-3 border-b-3 border-[#F279BC]/60 rounded-br-lg" />
                             </motion.div>
                         </div>
                     </motion.div>
@@ -204,7 +204,7 @@ export default function Hero() {
                     >
                         <div className="relative">
                             {/* Outer Glow */}
-                            <div className="absolute -inset-8 bg-gradient-to-br from-[#84E2C2]/30 via-[#D1F8F0]/20 to-[#9EE9D1]/30 rounded-[3rem] blur-3xl opacity-60" />
+                            <div className="absolute -inset-8 bg-gradient-to-br from-[#F279BC]/30 via-[#FDF0F6]/20 to-[#F291C7]/30 rounded-[3rem] blur-3xl opacity-60" />
 
                             {/* Main Image Container */}
                             <motion.div
@@ -213,7 +213,7 @@ export default function Hero() {
                                 className="relative w-full max-w-lg mx-auto"
                             >
                                 {/* Premium Frame */}
-                                <div className="absolute -inset-1.5 bg-gradient-to-br from-[#84E2C2] via-[#9EE9D1] to-[#B8F1E1] rounded-[2.5rem] opacity-90" />
+                                <div className="absolute -inset-1.5 bg-gradient-to-br from-[#F279BC] via-[#F291C7] to-[#F2A0CD] rounded-[2.5rem] opacity-90" />
                                 <div className="absolute inset-0 bg-white rounded-[2.3rem] m-1.5" />
 
                                 <div className="relative rounded-[2rem] overflow-hidden m-3 shadow-2xl">
@@ -228,10 +228,10 @@ export default function Hero() {
                                 </div>
 
                                 {/* Corner Decorations */}
-                                <div className="absolute top-3 left-3 w-10 h-10 border-l-4 border-t-4 border-[#84E2C2]/70 rounded-tl-xl" />
-                                <div className="absolute top-3 right-3 w-10 h-10 border-r-4 border-t-4 border-[#84E2C2]/70 rounded-tr-xl" />
-                                <div className="absolute bottom-3 left-3 w-10 h-10 border-l-4 border-b-4 border-[#84E2C2]/70 rounded-bl-xl" />
-                                <div className="absolute bottom-3 right-3 w-10 h-10 border-r-4 border-b-4 border-[#84E2C2]/70 rounded-br-xl" />
+                                <div className="absolute top-3 left-3 w-10 h-10 border-l-4 border-t-4 border-[#F279BC]/70 rounded-tl-xl" />
+                                <div className="absolute top-3 right-3 w-10 h-10 border-r-4 border-t-4 border-[#F279BC]/70 rounded-tr-xl" />
+                                <div className="absolute bottom-3 left-3 w-10 h-10 border-l-4 border-b-4 border-[#F279BC]/70 rounded-bl-xl" />
+                                <div className="absolute bottom-3 right-3 w-10 h-10 border-r-4 border-b-4 border-[#F279BC]/70 rounded-br-xl" />
                             </motion.div>
 
                             {/* Floating Badge */}
@@ -241,11 +241,11 @@ export default function Hero() {
                                 className="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-lg p-4"
                             >
                                 <div className="flex items-center gap-3">
-                                    <div className="w-12 h-12 bg-[#84E2C2]/20 rounded-full flex items-center justify-center">
-                                        <ShieldCheck size={24} className="text-[#2D9A78]" />
+                                    <div className="w-12 h-12 bg-[#F279BC]/20 rounded-full flex items-center justify-center">
+                                        <ShieldCheck size={24} className="text-[#D962A3]" />
                                     </div>
                                     <div>
-                                        <p className="font-bold text-[#2C3E50]">100% Safe</p>
+                                        <p className="font-bold text-[#5C2D42]">100% Safe</p>
                                         <p className="text-xs text-gray-500">Background Verified</p>
                                     </div>
                                 </div>
@@ -263,11 +263,11 @@ export default function Hero() {
                                 className="absolute -top-4 -right-4 bg-white rounded-2xl shadow-lg p-4"
                             >
                                 <div className="flex items-center gap-3">
-                                    <div className="w-12 h-12 bg-[#9EE9D1]/30 rounded-full flex items-center justify-center">
-                                        <Award size={24} className="text-[#2D9A78]" />
+                                    <div className="w-12 h-12 bg-[#F291C7]/30 rounded-full flex items-center justify-center">
+                                        <Award size={24} className="text-[#D962A3]" />
                                     </div>
                                     <div>
-                                        <p className="font-bold text-[#2C3E50]">5+ Years</p>
+                                        <p className="font-bold text-[#5C2D42]">5+ Years</p>
                                         <p className="text-xs text-gray-500">Experience</p>
                                     </div>
                                 </div>
@@ -287,12 +287,12 @@ export default function Hero() {
                 <motion.div
                     animate={{ y: [0, 10, 0] }}
                     transition={{ duration: 1.5, repeat: Infinity }}
-                    className="w-6 h-10 border-2 border-[#2C3E50]/30 rounded-full flex justify-center pt-2"
+                    className="w-6 h-10 border-2 border-[#5C2D42]/30 rounded-full flex justify-center pt-2"
                 >
                     <motion.div
                         animate={{ y: [0, 12, 0] }}
                         transition={{ duration: 1.5, repeat: Infinity }}
-                        className="w-1.5 h-1.5 bg-[#2D9A78] rounded-full"
+                        className="w-1.5 h-1.5 bg-[#D962A3] rounded-full"
                     />
                 </motion.div>
             </motion.div>

@@ -78,12 +78,12 @@ export default function FloatingContactBubble() {
                                     whileTap={{ scale: 0.95 }}
                                     className="flex items-center gap-3 bg-white rounded-full shadow-xl pl-4 pr-5 py-3 group"
                                 >
-                                    <div className="w-12 h-12 bg-gradient-to-br from-[#84E2C2] to-[#2D9A78] rounded-full flex items-center justify-center shadow-lg">
+                                    <div className="w-12 h-12 bg-gradient-to-br from-[#F279BC] to-[#D962A3] rounded-full flex items-center justify-center shadow-lg">
                                         <Phone size={22} className="text-white" />
                                     </div>
                                     <div className="text-left">
                                         <p className="text-xs text-gray-500 font-medium">Call Now</p>
-                                        <p className="text-sm font-bold text-[#2C3E50]">
+                                        <p className="text-sm font-bold text-[#5C2D42]">
                                             (913) 206-9322
                                         </p>
                                     </div>
@@ -96,14 +96,14 @@ export default function FloatingContactBubble() {
                                     whileTap={{ scale: 0.95 }}
                                     className="flex items-center gap-3 bg-white rounded-full shadow-xl pl-4 pr-5 py-3 group"
                                 >
-                                    <div className="w-12 h-12 bg-gradient-to-br from-[#9EE9D1] to-[#84E2C2] rounded-full flex items-center justify-center shadow-lg">
+                                    <div className="w-12 h-12 bg-gradient-to-br from-[#F291C7] to-[#F279BC] rounded-full flex items-center justify-center shadow-lg">
                                         <MessageCircle size={22} className="text-white" />
                                     </div>
                                     <div className="text-left">
                                         <p className="text-xs text-gray-500 font-medium">
                                             Text Message
                                         </p>
-                                        <p className="text-sm font-bold text-[#1A3A3A]">
+                                        <p className="text-sm font-bold text-[#3D1F2E]">
                                             (913) 206-9322
                                         </p>
                                     </div>
@@ -120,7 +120,7 @@ export default function FloatingContactBubble() {
                         className="relative w-16 h-16 rounded-full shadow-2xl flex items-center justify-center overflow-hidden"
                         style={{
                             background:
-                                "linear-gradient(135deg, #84E2C2 0%, #9EE9D1 50%, #D1F8F0 100%)",
+                                "linear-gradient(135deg, #F279BC 0%, #F291C7 50%, #FDF0F6 100%)",
                         }}
                     >
                         {/* Animated Ring */}
@@ -134,7 +134,7 @@ export default function FloatingContactBubble() {
                                 repeat: Infinity,
                                 ease: "easeInOut",
                             }}
-                            className="absolute inset-0 rounded-full border-2 border-[#84E2C2]"
+                            className="absolute inset-0 rounded-full border-2 border-[#F279BC]"
                         />
 
                         {/* Second Ring */}
@@ -149,7 +149,7 @@ export default function FloatingContactBubble() {
                                 ease: "easeInOut",
                                 delay: 0.5,
                             }}
-                            className="absolute inset-0 rounded-full border-2 border-[#9EE9D1]"
+                            className="absolute inset-0 rounded-full border-2 border-[#F291C7]"
                         />
 
                         {/* Icon */}
@@ -171,10 +171,10 @@ export default function FloatingContactBubble() {
                             initial={{ opacity: 0, x: 10 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 1 }}
-                            className="absolute right-20 top-1/2 -translate-y-1/2 bg-[#2C3E50] text-white text-sm font-medium px-4 py-2 rounded-lg whitespace-nowrap shadow-lg"
+                            className="absolute right-20 top-1/2 -translate-y-1/2 bg-[#5C2D42] text-white text-sm font-medium px-4 py-2 rounded-lg whitespace-nowrap shadow-lg"
                         >
                             Contact Us!
-                            <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-0 h-0 border-l-8 border-l-[#2C3E50] border-y-4 border-y-transparent" />
+                            <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-0 h-0 border-l-8 border-l-[#5C2D42] border-y-4 border-y-transparent" />
                         </motion.div>
                     )}
                 </motion.div>

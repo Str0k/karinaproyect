@@ -17,7 +17,7 @@ export default function Biography() {
             id="about"
             className="section-padding relative overflow-hidden"
             style={{
-                background: "linear-gradient(180deg, var(--color-mint-pale) 0%, var(--color-cream) 100%)",
+                background: "linear-gradient(180deg, var(--color-pink-pale) 0%, var(--color-cream) 100%)",
             }}
         >
             {/* Decorative Background Elements */}
@@ -26,13 +26,13 @@ export default function Biography() {
                     animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
                     transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
                     className="absolute top-20 right-20 w-64 h-64 rounded-full blur-3xl"
-                    style={{ backgroundColor: "rgba(132, 226, 194, 0.3)" }}
+                    style={{ backgroundColor: "rgba(242, 121, 188, 0.3)" }}
                 />
                 <motion.div
                     animate={{ scale: [1.2, 1, 1.2], opacity: [0.3, 0.5, 0.3] }}
                     transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
                     className="absolute bottom-20 left-20 w-80 h-80 rounded-full blur-3xl"
-                    style={{ backgroundColor: "rgba(158, 233, 209, 0.25)" }}
+                    style={{ backgroundColor: "rgba(242, 145, 199, 0.25)" }}
                 />
             </div>
 
@@ -51,14 +51,14 @@ export default function Biography() {
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 200, delay: 0.2 }}
                         className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
-                        style={{ backgroundColor: "rgba(132, 226, 194, 0.2)" }}
+                        style={{ backgroundColor: "rgba(242, 121, 188, 0.2)" }}
                     >
-                        <Sparkles size={18} style={{ color: "#2D9A78" }} />
-                        <span className="text-sm font-semibold" style={{ color: "#2D9A78" }}>
+                        <Sparkles size={18} style={{ color: "#D962A3" }} />
+                        <span className="text-sm font-semibold" style={{ color: "#D962A3" }}>
                             About Me
                         </span>
                     </motion.div>
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: "#1A3A3A" }}>
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: "#3D1F2E" }}>
                         Meet Your Trusted Caregiver
                     </h2>
                 </motion.div>
@@ -78,7 +78,7 @@ export default function Biography() {
                             <div
                                 className="absolute -inset-4 sm:-inset-6 rounded-[2.5rem] blur-2xl opacity-60"
                                 style={{
-                                    background: "linear-gradient(135deg, rgba(132, 226, 194, 0.5), rgba(184, 241, 225, 0.4), rgba(158, 233, 209, 0.5))",
+                                    background: "linear-gradient(135deg, rgba(242, 121, 188, 0.5), rgba(242, 160, 205, 0.4), rgba(242, 145, 199, 0.5))",
                                 }}
                             />
 
@@ -92,7 +92,7 @@ export default function Biography() {
                                 <div
                                     className="absolute -inset-1 rounded-[2rem] sm:-inset-1.5 opacity-90"
                                     style={{
-                                        background: "linear-gradient(135deg, #84E2C2, #9EE9D1, #B8F1E1, #84E2C2)",
+                                        background: "linear-gradient(135deg, #F279BC, #F291C7, #F2A0CD, #F279BC)",
                                         backgroundSize: "300% 300%",
                                         animation: "gradient-shift 4s ease infinite",
                                     }}
@@ -112,7 +112,7 @@ export default function Biography() {
                                         <div
                                             className="absolute inset-0"
                                             style={{
-                                                background: "linear-gradient(to top, rgba(26, 58, 58, 0.1), transparent 40%, rgba(255, 255, 255, 0.1))",
+                                                background: "linear-gradient(to top, rgba(61, 31, 46, 0.1), transparent 40%, rgba(255, 255, 255, 0.1))",
                                             }}
                                         />
                                     </div>
@@ -121,11 +121,11 @@ export default function Biography() {
                                 {/* Corner Decorations */}
                                 <div
                                     className="absolute top-2 left-2 sm:top-3 sm:left-3 w-8 h-8 sm:w-10 sm:h-10 border-l-4 border-t-4 rounded-tl-xl"
-                                    style={{ borderColor: "rgba(132, 226, 194, 0.7)" }}
+                                    style={{ borderColor: "rgba(242, 121, 188, 0.7)" }}
                                 />
                                 <div
                                     className="absolute top-2 right-2 sm:top-3 sm:right-3 w-8 h-8 sm:w-10 sm:h-10 border-r-4 border-t-4 rounded-tr-xl"
-                                    style={{ borderColor: "rgba(132, 226, 194, 0.7)" }}
+                                    style={{ borderColor: "rgba(242, 121, 188, 0.7)" }}
                                 />
                             </motion.div>
 
@@ -138,14 +138,14 @@ export default function Biography() {
                                 <div className="flex items-center gap-2 sm:gap-3">
                                     <div
                                         className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center shrink-0"
-                                        style={{ backgroundColor: "rgba(132, 226, 194, 0.2)" }}
+                                        style={{ backgroundColor: "rgba(242, 121, 188, 0.2)" }}
                                     >
-                                        <Heart size={20} className="sm:hidden" style={{ color: "#2D9A78" }} />
-                                        <Heart size={24} className="hidden sm:block" style={{ color: "#2D9A78" }} />
+                                        <Heart size={20} className="sm:hidden" style={{ color: "#D962A3" }} />
+                                        <Heart size={24} className="hidden sm:block" style={{ color: "#D962A3" }} />
                                     </div>
                                     <div>
-                                        <p className="font-bold text-xs sm:text-base" style={{ color: "#1A3A3A" }}>Dedicated Care</p>
-                                        <p className="text-[10px] sm:text-xs" style={{ color: "#4A6D6D" }}>Trusted by Families</p>
+                                        <p className="font-bold text-xs sm:text-base" style={{ color: "#3D1F2E" }}>Dedicated Care</p>
+                                        <p className="text-[10px] sm:text-xs" style={{ color: "#7A4A5E" }}>Trusted by Families</p>
                                     </div>
                                 </div>
                             </motion.div>
@@ -167,7 +167,7 @@ export default function Biography() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.3 }}
                                 className="text-2xl md:text-3xl font-bold mb-2"
-                                style={{ color: "#1A3A3A" }}
+                                style={{ color: "#3D1F2E" }}
                             >
                                 Hi, I&apos;m Karina
                             </motion.h3>
@@ -177,7 +177,7 @@ export default function Biography() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 className="h-1 w-20 rounded-full origin-left"
-                                style={{ backgroundColor: "#84E2C2" }}
+                                style={{ backgroundColor: "#F279BC" }}
                             />
                         </div>
 
@@ -187,21 +187,21 @@ export default function Biography() {
                             viewport={{ once: true }}
                             transition={{ delay: 0.4 }}
                             className="space-y-5 text-lg leading-relaxed"
-                            style={{ color: "#4A6D6D" }}
+                            style={{ color: "#7A4A5E" }}
                         >
                             <p>
-                                I provide <span className="font-semibold" style={{ color: "#2D9A78" }}>attentive, nurturing childcare</span> rooted
+                                I provide <span className="font-semibold" style={{ color: "#D962A3" }}>attentive, nurturing childcare</span> rooted
                                 in patience, consistency, and thoughtful engagement. Every interaction is an opportunity to support
                                 a child&apos;s growth, curiosity, and well-being.
                             </p>
                             <p>
-                                My approach centers on creating a <span className="font-semibold" style={{ color: "#2D9A78" }}>calm, supportive environment</span> where
+                                My approach centers on creating a <span className="font-semibold" style={{ color: "#D962A3" }}>calm, supportive environment</span> where
                                 children feel comfortable, safe, and free to explore—while giving parents complete peace of mind.
                                 I understand that entrusting your child to someone is a significant decision, and I take that
                                 responsibility seriously.
                             </p>
                             <p>
-                                <span className="font-semibold" style={{ color: "#2D9A78" }}>Reliable care, clear communication, and genuine respect</span> for
+                                <span className="font-semibold" style={{ color: "#D962A3" }}>Reliable care, clear communication, and genuine respect</span> for
                                 each family&apos;s unique needs and values guide everything I do. Whether it&apos;s in-home care or
                                 event childcare, I bring the same dedication to every situation.
                             </p>
@@ -225,16 +225,16 @@ export default function Biography() {
                                     whileHover={{ scale: 1.05, y: -2 }}
                                     className="flex items-center gap-3 p-4 rounded-xl bg-white shadow-md backdrop-blur-sm"
                                     style={{
-                                        border: "1px solid rgba(132, 226, 194, 0.3)",
+                                        border: "1px solid rgba(242, 121, 188, 0.3)",
                                     }}
                                 >
                                     <div
                                         className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
-                                        style={{ backgroundColor: "rgba(132, 226, 194, 0.2)" }}
+                                        style={{ backgroundColor: "rgba(242, 121, 188, 0.2)" }}
                                     >
-                                        <item.icon size={20} style={{ color: "#2D9A78" }} />
+                                        <item.icon size={20} style={{ color: "#D962A3" }} />
                                     </div>
-                                    <span className="text-sm font-semibold" style={{ color: "#1A3A3A" }}>
+                                    <span className="text-sm font-semibold" style={{ color: "#3D1F2E" }}>
                                         {item.text}
                                     </span>
                                 </motion.div>

@@ -14,10 +14,10 @@ import {
 
 export default function ContactSection() {
     return (
-        <section id="contact" className="section-padding relative overflow-hidden" style={{ background: "linear-gradient(180deg, #FAFFFE 0%, #D1F8F0 50%, #EBFFFF 100%)" }}>
+        <section id="contact" className="section-padding relative overflow-hidden" style={{ background: "linear-gradient(180deg, #FAFFFE 0%, #FDF0F6 50%, #FFF8FB 100%)" }}>
             {/* Decorative Elements */}
-            <div className="absolute top-20 -left-20 w-48 h-48 bg-gradient-to-br from-[#84E2C2]/20 to-[#B8F1E1]/15 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute bottom-20 -right-20 w-56 h-56 bg-gradient-to-br from-[#9EE9D1]/15 to-[#D1F8F0]/20 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute top-20 -left-20 w-48 h-48 bg-gradient-to-br from-[#F279BC]/20 to-[#F2A0CD]/15 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute bottom-20 -right-20 w-56 h-56 bg-gradient-to-br from-[#F291C7]/15 to-[#FDF0F6]/20 rounded-full blur-3xl pointer-events-none" />
 
             <div className="container-custom relative z-10">
                 {/* Section Header */}
@@ -28,13 +28,13 @@ export default function ContactSection() {
                     transition={{ duration: 0.5 }}
                     className="text-center max-w-3xl mx-auto mb-16"
                 >
-                    <span className="inline-block px-4 py-2 bg-[#84E2C2]/20 text-[#2D9A78] font-semibold rounded-full text-sm mb-4">
+                    <span className="inline-block px-4 py-2 bg-[#F279BC]/20 text-[#D962A3] font-semibold rounded-full text-sm mb-4">
                         Get in Touch
                     </span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#1A3A3A] mb-4">
-                        Ready to <span className="text-[#2D9A78]">Connect?</span>
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#3D1F2E] mb-4">
+                        Ready to <span className="text-[#D962A3]">Connect?</span>
                     </h2>
-                    <p className="text-[#4A6D6D] text-lg">
+                    <p className="text-[#7A4A5E] text-lg">
                         I&apos;d love to hear from you! Reach out directly and let&apos;s discuss how I can help with your childcare needs.
                     </p>
                 </motion.div>
@@ -50,8 +50,8 @@ export default function ContactSection() {
                         transition={{ duration: 0.5 }}
                         whileHover={{ scale: 1.03, y: -5 }}
                         whileTap={{ scale: 0.98 }}
-                        className="bg-gradient-to-br from-[#2D9A78] to-[#84E2C2] rounded-3xl p-8 text-white shadow-lg cursor-pointer group"
-                        style={{ boxShadow: "0 10px 40px rgba(45, 154, 120, 0.3)" }}
+                        className="bg-gradient-to-br from-[#D962A3] to-[#F279BC] rounded-3xl p-8 text-white shadow-lg cursor-pointer group"
+                        style={{ boxShadow: "0 10px 40px rgba(217, 98, 163, 0.3)" }}
                     >
                         <div className="flex items-center gap-4 mb-6">
                             <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -75,8 +75,8 @@ export default function ContactSection() {
                         transition={{ duration: 0.5, delay: 0.1 }}
                         whileHover={{ scale: 1.03, y: -5 }}
                         whileTap={{ scale: 0.98 }}
-                        className="bg-gradient-to-br from-[#84E2C2] to-[#9EE9D1] rounded-3xl p-8 text-white shadow-lg cursor-pointer group"
-                        style={{ boxShadow: "0 10px 40px rgba(132, 226, 194, 0.3)" }}
+                        className="bg-gradient-to-br from-[#F279BC] to-[#F291C7] rounded-3xl p-8 text-white shadow-lg cursor-pointer group"
+                        style={{ boxShadow: "0 10px 40px rgba(242, 121, 188, 0.3)" }}
                     >
                         <div className="flex items-center gap-4 mb-6">
                             <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -102,15 +102,15 @@ export default function ContactSection() {
                     whileHover={{ scale: 1.02 }}
                     className="block max-w-2xl mx-auto mb-16"
                 >
-                    <div className="bg-white rounded-3xl p-6 shadow-lg flex items-center gap-6 group" style={{ boxShadow: "0 4px 20px rgba(132, 226, 194, 0.15)" }}>
-                        <div className="w-14 h-14 bg-[#84E2C2]/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <Mail size={28} className="text-[#2D9A78]" />
+                    <div className="bg-white rounded-3xl p-6 shadow-lg flex items-center gap-6 group" style={{ boxShadow: "0 4px 20px rgba(242, 121, 188, 0.15)" }}>
+                        <div className="w-14 h-14 bg-[#F279BC]/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <Mail size={28} className="text-[#D962A3]" />
                         </div>
                         <div className="flex-grow">
-                            <p className="text-sm text-[#4A6D6D] mb-1">Email me at</p>
-                            <p className="text-xl font-semibold text-[#1A3A3A]">karigss95@gmail.com</p>
+                            <p className="text-sm text-[#7A4A5E] mb-1">Email me at</p>
+                            <p className="text-xl font-semibold text-[#3D1F2E]">karigss95@gmail.com</p>
                         </div>
-                        <div className="hidden sm:block text-sm text-[#84E2C2] font-medium">
+                        <div className="hidden sm:block text-sm text-[#F279BC] font-medium">
                             Click to email →
                         </div>
                     </div>
@@ -125,13 +125,13 @@ export default function ContactSection() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.4, delay: 0.3 }}
                         className="bg-white rounded-2xl p-6 text-center shadow-md"
-                        style={{ boxShadow: "0 4px 20px rgba(132, 226, 194, 0.1)" }}
+                        style={{ boxShadow: "0 4px 20px rgba(242, 121, 188, 0.1)" }}
                     >
-                        <div className="w-12 h-12 bg-[#84E2C2]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                            <Clock size={24} className="text-[#2D9A78]" />
+                        <div className="w-12 h-12 bg-[#F279BC]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <Clock size={24} className="text-[#D962A3]" />
                         </div>
-                        <h4 className="font-bold text-[#1A3A3A] mb-1">Quick Response</h4>
-                        <p className="text-sm text-[#4A6D6D]">Usually within 2-4 hours</p>
+                        <h4 className="font-bold text-[#3D1F2E] mb-1">Quick Response</h4>
+                        <p className="text-sm text-[#7A4A5E]">Usually within 2-4 hours</p>
                     </motion.div>
 
                     {/* Service Area */}
@@ -141,13 +141,13 @@ export default function ContactSection() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.4, delay: 0.4 }}
                         className="bg-white rounded-2xl p-6 text-center shadow-md"
-                        style={{ boxShadow: "0 4px 20px rgba(132, 226, 194, 0.1)" }}
+                        style={{ boxShadow: "0 4px 20px rgba(242, 121, 188, 0.1)" }}
                     >
-                        <div className="w-12 h-12 bg-[#9EE9D1]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                            <MapPin size={24} className="text-[#2D9A78]" />
+                        <div className="w-12 h-12 bg-[#F291C7]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <MapPin size={24} className="text-[#D962A3]" />
                         </div>
-                        <h4 className="font-bold text-[#1A3A3A] mb-1">Kansas City Area</h4>
-                        <p className="text-sm text-[#4A6D6D]">& surrounding cities</p>
+                        <h4 className="font-bold text-[#3D1F2E] mb-1">Kansas City Area</h4>
+                        <p className="text-sm text-[#7A4A5E]">& surrounding cities</p>
                     </motion.div>
 
                     {/* Certified */}
@@ -157,13 +157,13 @@ export default function ContactSection() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.4, delay: 0.5 }}
                         className="bg-white rounded-2xl p-6 text-center shadow-md"
-                        style={{ boxShadow: "0 4px 20px rgba(132, 226, 194, 0.1)" }}
+                        style={{ boxShadow: "0 4px 20px rgba(242, 121, 188, 0.1)" }}
                     >
-                        <div className="w-12 h-12 bg-[#B8F1E1]/30 rounded-xl flex items-center justify-center mx-auto mb-4">
-                            <ShieldCheck size={24} className="text-[#2D9A78]" />
+                        <div className="w-12 h-12 bg-[#F2A0CD]/30 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <ShieldCheck size={24} className="text-[#D962A3]" />
                         </div>
-                        <h4 className="font-bold text-[#1A3A3A] mb-1">Fully Certified</h4>
-                        <p className="text-sm text-[#4A6D6D]">CPR & First Aid</p>
+                        <h4 className="font-bold text-[#3D1F2E] mb-1">Fully Certified</h4>
+                        <p className="text-sm text-[#7A4A5E]">CPR & First Aid</p>
                     </motion.div>
                 </div>
 
@@ -175,8 +175,8 @@ export default function ContactSection() {
                     transition={{ duration: 0.5, delay: 0.6 }}
                     className="text-center mt-12"
                 >
-                    <p className="text-[#4A6D6D] flex items-center justify-center gap-2">
-                        Looking forward to hearing from you! <Heart size={16} className="text-[#84E2C2] fill-[#84E2C2]" />
+                    <p className="text-[#7A4A5E] flex items-center justify-center gap-2">
+                        Looking forward to hearing from you! <Heart size={16} className="text-[#F279BC] fill-[#F279BC]" />
                     </p>
                 </motion.div>
             </div>

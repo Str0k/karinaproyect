@@ -63,15 +63,15 @@ export default function FAQ() {
     };
 
     return (
-        <section ref={sectionRef} className="section-padding relative overflow-hidden" style={{ background: "linear-gradient(180deg, #D1F8F0 0%, #EBFFFF 50%, #FAFFFE 100%)" }}>
+        <section ref={sectionRef} className="section-padding relative overflow-hidden" style={{ background: "linear-gradient(180deg, #FDF0F6 0%, #FFF8FB 50%, #FAFFFE 100%)" }}>
             {/* Parallax Decorative Elements */}
             <motion.div
                 style={{ y: decorY1 }}
-                className="absolute top-24 -left-20 w-48 h-48 bg-gradient-to-br from-[#84E2C2]/20 to-[#B8F1E1]/15 rounded-full blur-3xl pointer-events-none"
+                className="absolute top-24 -left-20 w-48 h-48 bg-gradient-to-br from-[#F279BC]/20 to-[#F2A0CD]/15 rounded-full blur-3xl pointer-events-none"
             />
             <motion.div
                 style={{ y: decorY2 }}
-                className="absolute bottom-24 -right-20 w-56 h-56 bg-gradient-to-br from-[#9EE9D1]/15 to-[#D1F8F0]/20 rounded-full blur-3xl pointer-events-none"
+                className="absolute bottom-24 -right-20 w-56 h-56 bg-gradient-to-br from-[#F291C7]/15 to-[#FDF0F6]/20 rounded-full blur-3xl pointer-events-none"
             />
 
             <div className="container-custom relative z-10">
@@ -83,14 +83,14 @@ export default function FAQ() {
                     transition={{ duration: 0.5 }}
                     className="text-center max-w-3xl mx-auto mb-16"
                 >
-                    <span className="inline-block px-4 py-2 bg-[#84E2C2]/20 text-[#2D9A78] font-semibold rounded-full text-sm mb-4">
+                    <span className="inline-block px-4 py-2 bg-[#F279BC]/20 text-[#D962A3] font-semibold rounded-full text-sm mb-4">
                         FAQ
                     </span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#1A3A3A] mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#3D1F2E] mb-4">
                         Frequently Asked{" "}
-                        <span className="text-[#2D9A78]">Questions</span>
+                        <span className="text-[#D962A3]">Questions</span>
                     </h2>
-                    <p className="text-[#4A6D6D] text-lg">
+                    <p className="text-[#7A4A5E] text-lg">
                         Have questions? I&apos;ve got answers. Find everything you need to
                         know about my childcare services.
                     </p>
@@ -113,19 +113,19 @@ export default function FAQ() {
                                     ? "bg-white shadow-lg"
                                     : "bg-white/50 hover:bg-white hover:shadow-md"
                                     }`}
-                                style={openIndex === index ? { boxShadow: "0 10px 30px rgba(132, 226, 194, 0.2)" } : {}}
+                                style={openIndex === index ? { boxShadow: "0 10px 30px rgba(242, 121, 188, 0.2)" } : {}}
                             >
                                 <div className="flex items-center gap-3 sm:gap-4">
                                     <div
                                         className={`w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0 transition-colors ${openIndex === index
-                                            ? "bg-[#2D9A78] text-white"
-                                            : "bg-[#84E2C2]/20 text-[#2D9A78]"
+                                            ? "bg-[#D962A3] text-white"
+                                            : "bg-[#F279BC]/20 text-[#D962A3]"
                                             }`}
                                     >
                                         <HelpCircle size={18} className="sm:hidden" />
                                         <HelpCircle size={20} className="hidden sm:block" />
                                     </div>
-                                    <span className="font-semibold text-[#1A3A3A] text-sm sm:text-base">
+                                    <span className="font-semibold text-[#3D1F2E] text-sm sm:text-base">
                                         {faq.question}
                                     </span>
                                 </div>
@@ -137,7 +137,7 @@ export default function FAQ() {
                                     <ChevronDown
                                         size={24}
                                         className={
-                                            openIndex === index ? "text-[#2D9A78]" : "text-[#9EE9D1]"
+                                            openIndex === index ? "text-[#D962A3]" : "text-[#F291C7]"
                                         }
                                     />
                                 </motion.div>
@@ -152,9 +152,9 @@ export default function FAQ() {
                                         transition={{ duration: 0.3 }}
                                         className="overflow-hidden"
                                     >
-                                        <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-2 bg-white rounded-b-2xl -mt-4 shadow-lg" style={{ boxShadow: "0 10px 30px rgba(132, 226, 194, 0.15)" }}>
+                                        <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-2 bg-white rounded-b-2xl -mt-4 shadow-lg" style={{ boxShadow: "0 10px 30px rgba(242, 121, 188, 0.15)" }}>
                                             <div className="pl-0 sm:pl-14">
-                                                <p className="text-[#4A6D6D] leading-relaxed text-sm sm:text-base">
+                                                <p className="text-[#7A4A5E] leading-relaxed text-sm sm:text-base">
                                                     {faq.answer}
                                                 </p>
                                             </div>
@@ -175,16 +175,16 @@ export default function FAQ() {
                     transition={{ duration: 0.5, delay: 0.3 }}
                     className="mt-20 max-w-4xl mx-auto"
                 >
-                    <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#1A3A3A] to-[#2D5A5A] p-8 md:p-12 shadow-2xl text-center">
+                    <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#3D1F2E] to-[#2D5A5A] p-8 md:p-12 shadow-2xl text-center">
                         {/* Decorative Background Elements */}
                         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-                            <div className="absolute top-[-50%] left-[-20%] w-[500px] h-[500px] bg-[#84E2C2]/10 rounded-full blur-[100px]" />
-                            <div className="absolute bottom-[-50%] right-[-20%] w-[500px] h-[500px] bg-[#9EE9D1]/10 rounded-full blur-[100px]" />
+                            <div className="absolute top-[-50%] left-[-20%] w-[500px] h-[500px] bg-[#F279BC]/10 rounded-full blur-[100px]" />
+                            <div className="absolute bottom-[-50%] right-[-20%] w-[500px] h-[500px] bg-[#F291C7]/10 rounded-full blur-[100px]" />
                         </div>
 
                         <div className="relative z-10 flex flex-col items-center">
                             <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-6 backdrop-blur-sm border border-white/10">
-                                <HelpCircle size={32} className="text-[#84E2C2]" />
+                                <HelpCircle size={32} className="text-[#F279BC]" />
                             </div>
 
                             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
@@ -200,7 +200,7 @@ export default function FAQ() {
                                     href="#contact"
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
-                                    className="px-8 py-3 bg-[#84E2C2] text-[#1A3A3A] font-bold rounded-full hover:bg-[#72D0B2] transition-colors shadow-lg shadow-[#84E2C2]/20"
+                                    className="px-8 py-3 bg-[#F279BC] text-[#3D1F2E] font-bold rounded-full hover:bg-[#72D0B2] transition-colors shadow-lg shadow-[#F279BC]/20"
                                 >
                                     Message Me
                                 </motion.a>

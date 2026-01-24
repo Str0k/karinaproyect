@@ -1,44 +1,43 @@
 @import "tailwindcss";
 
 /* ========================================
-   DESIGN SYSTEM - Childcare Landing Page
+   DESIGN SYSTEM - CareByKG Pink Theme
+   Professional Rosa/Magenta Palette
    ======================================== */
 
 :root {
-  /* Primary Colors - Mint/Teal Palette */
-  --color-mint-dark: #6FBFA8;
-  --color-mint-primary: #86CDB7;
-  --color-mint-light: #B7E3D5;
-  --color-mint-soft: #DDEFE8;
-  --color-mint-pale: #F3F8F6;
+  /* Primary Colors - Pink/Magenta Palette */
+  --color-primary-dark: #BF5084;
+  --color-primary: #D962A3;
+  --color-primary-light: #F279BC;
+  --color-accent: #F291C7;
+  --color-accent-light: #F2A0CD;
 
-  /* Legacy aliases for compatibility */
-  --color-coral-primary: #6FBFA8;
-  --color-coral-light: #86CDB7;
-  --color-peachy-pink: #DDEFE8;
+  /* Extended Pink Shades for UI */
+  --color-pink-soft: #F8C8E0;
+  --color-pink-pale: #FDF0F6;
+  --color-pink-cream: #FFF8FB;
 
-  /* Secondary Colors - Complementary */
-  --color-teal: #1F5A52;
-  --color-teal-light: #8BC6B5;
-  --color-accent: #1F5A52;
-  --color-accent-dark: #163F3A;
-  --color-gold: #C9A55C;
-  --color-gold-light: #E1C48B;
+  /* Text Colors - High Contrast */
+  --color-text-dark: #3D1F2E;
+  --color-text-primary: #5C2D42;
+  --color-text-secondary: #7A4A5E;
+  --color-text-muted: #9E7186;
 
   /* Neutral Colors */
-  --color-cream: #F8FAF9;
-  --color-warm-gray: #EEF3F1;
-  --color-dark-navy: #122C2A;
-  --color-gray-600: #5A6F6B;
+  --color-cream: #FFFBFD;
+  --color-warm-gray: #F5EDF1;
+  --color-dark-navy: #3D1F2E;
+  --color-gray-600: #7A4A5E;
 
   /* Background */
-  --background: #F8FAF9;
-  --foreground: #122C2A;
+  --background: #FFFBFD;
+  --foreground: #3D1F2E;
 
-  /* Shadows */
-  --shadow-sm: 0 4px 10px rgba(18, 44, 42, 0.08);
-  --shadow-md: 0 12px 26px rgba(18, 44, 42, 0.12), 0 2px 8px rgba(18, 44, 42, 0.08);
-  --shadow-lg: 0 24px 50px rgba(18, 44, 42, 0.16), 0 6px 20px rgba(18, 44, 42, 0.12);
+  /* Shadows - Pink tinted */
+  --shadow-sm: 0 4px 10px rgba(191, 80, 132, 0.08);
+  --shadow-md: 0 12px 26px rgba(191, 80, 132, 0.12), 0 2px 8px rgba(191, 80, 132, 0.08);
+  --shadow-lg: 0 24px 50px rgba(191, 80, 132, 0.16), 0 6px 20px rgba(191, 80, 132, 0.12);
 
   /* Transitions */
   --transition-fast: 150ms ease;
@@ -143,15 +142,15 @@ p {
    ======================================== */
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--color-accent-dark), var(--color-teal));
+  background: linear-gradient(135deg, #BF5084, #D962A3);
   color: white;
   padding: 0.875rem 1.75rem;
   border-radius: 999px;
   font-weight: 600;
   font-size: 1rem;
-  border: 1px solid rgba(31, 90, 82, 0.15);
+  border: 1px solid rgba(191, 80, 132, 0.15);
   cursor: pointer;
-  box-shadow: 0 12px 24px rgba(31, 90, 82, 0.2);
+  box-shadow: 0 12px 24px rgba(191, 80, 132, 0.25);
   transition: all var(--transition-base);
   display: inline-flex;
   align-items: center;
@@ -168,18 +167,18 @@ p {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 18px 35px rgba(31, 90, 82, 0.3);
-  background: linear-gradient(135deg, #143C36, #1F5A52);
+  box-shadow: 0 18px 35px rgba(191, 80, 132, 0.35);
+  background: linear-gradient(135deg, #A3426E, #BF5084);
 }
 
 .btn-secondary {
-  background: rgba(31, 90, 82, 0.08);
-  color: var(--color-accent);
+  background: rgba(217, 98, 163, 0.08);
+  color: #BF5084;
   padding: 0.875rem 1.75rem;
   border-radius: 999px;
   font-weight: 600;
   font-size: 1rem;
-  border: 1px solid rgba(31, 90, 82, 0.2);
+  border: 1px solid rgba(217, 98, 163, 0.25);
   cursor: pointer;
   transition: all var(--transition-base);
   display: inline-flex;
@@ -196,7 +195,7 @@ p {
 }
 
 .btn-secondary:hover {
-  background: linear-gradient(135deg, rgba(31, 90, 82, 0.95), rgba(111, 191, 168, 0.8));
+  background: linear-gradient(135deg, #D962A3, #F279BC);
   color: white;
   border-color: transparent;
 }
@@ -206,19 +205,19 @@ p {
    ======================================== */
 
 .card {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 1.75rem;
   padding: 2rem;
   box-shadow: var(--shadow-md);
   transition: all var(--transition-base);
-  border: 1px solid rgba(31, 90, 82, 0.08);
+  border: 1px solid rgba(242, 160, 205, 0.15);
   backdrop-filter: blur(12px);
 }
 
 .card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: rgba(31, 90, 82, 0.2);
+  border-color: rgba(217, 98, 163, 0.3);
 }
 
 /* ========================================
@@ -226,11 +225,11 @@ p {
    ======================================== */
 
 .gradient-hero {
-  background: linear-gradient(135deg, #F7FBFA 0%, #DDEFE8 35%, #B7E3D5 60%, #F8FAF9 100%);
+  background: linear-gradient(135deg, #FFFBFD 0%, #FDF0F6 35%, #F8C8E0 60%, #FFFBFD 100%);
 }
 
 .gradient-section {
-  background: linear-gradient(180deg, #F8FAF9 0%, #F3F8F6 50%, #DDEFE8 100%);
+  background: linear-gradient(180deg, #FFFBFD 0%, #FDF0F6 50%, #F8C8E0 100%);
 }
 
 /* ========================================
@@ -322,11 +321,11 @@ p {
 
 /* Hero Title Treatments */
 .hero-title {
-  text-shadow: 0 18px 35px rgba(18, 44, 42, 0.18);
+  text-shadow: 0 18px 35px rgba(61, 31, 46, 0.15);
 }
 
 .hero-title-accent {
-  background: linear-gradient(120deg, #1F5A52, #C9A55C, #86CDB7);
+  background: linear-gradient(120deg, #BF5084, #D962A3, #F279BC);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -374,7 +373,7 @@ p {
   content: '';
   position: absolute;
   inset: -2px;
-  background: linear-gradient(135deg, #C9A55C, #E1C48B, #86CDB7, #C9A55C);
+  background: linear-gradient(135deg, #BF5084, #D962A3, #F279BC, #BF5084);
   border-radius: inherit;
   z-index: -1;
   background-size: 300% 300%;

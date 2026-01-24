@@ -38,7 +38,7 @@ export default function Footer() {
     };
 
     return (
-        <footer className="bg-[#1A3A3A] text-white">
+        <footer className="bg-[#3D1F2E] text-white">
             {/* Main Footer */}
             <div className="container-custom section-padding pb-12">
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -50,7 +50,7 @@ export default function Footer() {
                         transition={{ duration: 0.5 }}
                     >
                         <a href="#" className="text-3xl font-bold mb-4 block">
-                            <span className="text-[#84E2C2]">CareBy</span>KG
+                            <span className="text-[#F279BC]">CareBy</span>KG
                         </a>
                         <p className="text-gray-300 mb-6 leading-relaxed">
                             Professional childcare services for Kansas City families.
@@ -59,13 +59,13 @@ export default function Footer() {
                         </p>
                         <div className="flex gap-3">
                             <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
-                                <ShieldCheck size={20} className="text-[#84E2C2]" />
+                                <ShieldCheck size={20} className="text-[#F279BC]" />
                             </div>
                             <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
-                                <Award size={20} className="text-[#9EE9D1]" />
+                                <Award size={20} className="text-[#F291C7]" />
                             </div>
                             <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
-                                <Languages size={20} className="text-[#B8F1E1]" />
+                                <Languages size={20} className="text-[#F2A0CD]" />
                             </div>
                         </div>
                     </motion.div>
@@ -83,7 +83,7 @@ export default function Footer() {
                                 <li key={link.name}>
                                     <button
                                         onClick={() => scrollToSection(link.href)}
-                                        className="text-gray-300 hover:text-[#84E2C2] hover:pl-2 transition-all text-left"
+                                        className="text-gray-300 hover:text-[#F279BC] hover:pl-2 transition-all text-left"
                                     >
                                         {link.name}
                                     </button>
@@ -103,7 +103,7 @@ export default function Footer() {
                         <ul className="space-y-3">
                             {serviceAreas.map((area) => (
                                 <li key={area} className="flex items-center gap-2">
-                                    <MapPin size={14} className="text-[#84E2C2]" />
+                                    <MapPin size={14} className="text-[#F279BC]" />
                                     <span className="text-gray-300 hover:text-white transition-colors">{area}</span>
                                 </li>
                             ))}
@@ -124,8 +124,8 @@ export default function Footer() {
                                     href="tel:+19132069322"
                                     className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group"
                                 >
-                                    <div className="w-10 h-10 bg-[#84E2C2]/10 rounded-full flex items-center justify-center group-hover:bg-[#84E2C2]/20 transition-colors">
-                                        <Phone size={18} className="text-[#84E2C2]" />
+                                    <div className="w-10 h-10 bg-[#F279BC]/10 rounded-full flex items-center justify-center group-hover:bg-[#F279BC]/20 transition-colors">
+                                        <Phone size={18} className="text-[#F279BC]" />
                                     </div>
                                     (913) 206-9322
                                 </a>
@@ -135,8 +135,8 @@ export default function Footer() {
                                     href="mailto:karigss95@gmail.com"
                                     className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group"
                                 >
-                                    <div className="w-10 h-10 bg-[#9EE9D1]/10 rounded-full flex items-center justify-center group-hover:bg-[#9EE9D1]/20 transition-colors">
-                                        <Mail size={18} className="text-[#9EE9D1]" />
+                                    <div className="w-10 h-10 bg-[#F291C7]/10 rounded-full flex items-center justify-center group-hover:bg-[#F291C7]/20 transition-colors">
+                                        <Mail size={18} className="text-[#F291C7]" />
                                     </div>
                                     karigss95@gmail.com
                                 </a>
@@ -146,7 +146,7 @@ export default function Footer() {
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
                             onClick={() => scrollToSection("#contact")}
-                            className="w-full mt-6 px-6 py-3 bg-gradient-to-r from-[#84E2C2] to-[#2D9A78] text-white font-bold rounded-xl shadow-lg hover:shadow-[#84E2C2]/20 transition-all"
+                            className="w-full mt-6 px-6 py-3 bg-gradient-to-r from-[#BF5084] to-[#D962A3] text-white font-bold rounded-xl shadow-lg hover:shadow-[#D962A3]/20 transition-all"
                         >
                             Book Now
                         </motion.button>
@@ -155,18 +155,18 @@ export default function Footer() {
             </div>
 
             {/* Bottom Bar */}
-            <div className="border-t border-white/10 bg-[#152e2e]">
+            <div className="border-t border-white/10 bg-[#2D1424]">
                 <div className="container-custom py-8">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                         <p className="text-gray-400 text-sm text-center md:text-left">
                             © {currentYear} CareByKG. All rights reserved.
                         </p>
                         <p className="text-gray-400 text-sm flex items-center gap-2">
-                            Made with <Heart size={16} className="text-[#84E2C2] fill-[#84E2C2]" /> in Kansas City
+                            Made with <Heart size={16} className="text-[#F279BC] fill-[#F279BC]" /> in Kansas City
                         </p>
                     </div>
                 </div>
             </div>
-        </footer >
+        </footer>
     );
 }
