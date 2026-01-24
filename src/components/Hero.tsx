@@ -47,15 +47,33 @@ export default function Hero() {
                 />
             </div>
 
-            <div className="container-custom relative z-10 pt-24 pb-16">
+            <div className="container-custom relative z-10 pt-32 sm:pt-28 lg:pt-24 pb-16">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Content */}
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="text-center lg:text-left"
+                        className="text-center lg:text-left order-2 lg:order-1"
                     >
+                        {/* Mobile Spotlight */}
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: 0.15 }}
+                            className="relative mx-auto mb-8 w-full max-w-md lg:hidden"
+                        >
+                            <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-[#1F5A52]/20 via-[#86CDB7]/20 to-[#C9A55C]/20 blur-2xl" />
+                            <div className="relative rounded-[2rem] border border-white/40 bg-white/70 px-6 py-5 shadow-xl backdrop-blur">
+                                <p className="text-xs uppercase tracking-[0.35em] text-[#1F5A52] font-semibold">
+                                    Premium childcare
+                                </p>
+                                <p className="mt-2 text-sm text-[#5A6F6B]">
+                                    Peace of mind for your events
+                                </p>
+                            </div>
+                        </motion.div>
+
                         {/* Rating Badge */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -95,7 +113,12 @@ export default function Hero() {
                             transition={{ delay: 0.4 }}
                             className="text-lg md:text-xl text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0"
                         >
-                            Serving <span className="font-semibold text-[#2D9A78]">Kansas City</span> and surrounding areas.
+                            Serving{" "}
+                            <span className="relative inline-flex items-center">
+                                <span className="absolute -inset-x-2 -inset-y-1 rounded-full bg-gradient-to-r from-[#C9A55C]/30 via-[#86CDB7]/25 to-transparent" />
+                                <span className="relative font-semibold text-[#1F5A52]">Kansas City</span>
+                            </span>{" "}
+                            and surrounding areas.
                             Experienced childcare provider specializing in both in-home and
                             event childcare. Perfect for birthdays, parties, and special
                             events, providing parents peace of mind while creating a fun, safe
@@ -158,11 +181,15 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.3 }}
-                        className="relative lg:hidden mb-8"
+                        className="relative lg:hidden mb-8 order-1"
                     >
                         <div className="relative max-w-sm mx-auto">
                             {/* Outer Glow */}
-                            <div className="absolute -inset-4 bg-gradient-to-br from-[#84E2C2]/30 via-[#D1F8F0]/20 to-[#9EE9D1]/30 rounded-[2.5rem] blur-2xl opacity-60" />
+                            <motion.div
+                                animate={{ opacity: [0.5, 0.8, 0.5] }}
+                                transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
+                                className="absolute -inset-6 bg-gradient-to-br from-[#1F5A52]/30 via-[#86CDB7]/20 to-[#C9A55C]/30 rounded-[2.8rem] blur-2xl"
+                            />
 
                             <motion.div
                                 animate={{ y: [0, -10, 0] }}
